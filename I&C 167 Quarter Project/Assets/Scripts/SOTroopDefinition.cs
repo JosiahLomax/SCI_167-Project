@@ -16,6 +16,8 @@ public class SOTroopDefinition : ScriptableObject
     }
 
     [SerializeField]
+    private GameObject troopPrefab;
+    [SerializeField]
     private string displayName;           // The name that will appear in the UI for the specfic troop type
     [SerializeField]
     public float troopHealth;            // The amount of health the specific troop type will have

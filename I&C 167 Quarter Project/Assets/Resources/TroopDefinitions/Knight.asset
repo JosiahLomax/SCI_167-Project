@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b749cc4b06a6df5428b26c9c7f270dde, type: 3}
   m_Name: Knight
   m_EditorClassIdentifier: 
-  displayName: Knight
-  displayIcon: {fileID: 0}
   troopPrefab: {fileID: 1792567730890473246, guid: efb8a8a58b22269459445f5c152fff64, type: 3}
+  displayName: Knight
   troopHealth: 100
-  type: 2
-  damagePerAttack: 10
   movementSpeed: 3
+  damagePerAttack: 10
+  type: 2

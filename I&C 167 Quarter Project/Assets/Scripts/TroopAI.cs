@@ -6,6 +6,7 @@ using Pathfinding;
 public class TroopAI : MonoBehaviour
 {
     public Transform target;
+    
 
     public float speed;
     public float nextWaypointDistance;
