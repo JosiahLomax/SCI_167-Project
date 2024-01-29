@@ -20,7 +20,7 @@ public class SOTroopDefinition : ScriptableObject
     [SerializeField]
     public float troopHealth;            // The amount of health the specific troop type will have
     [SerializeField]
-    private float movementSpeed;      //How fast a specific troop type moves
+    public float movementSpeed;      //How fast a specific troop type moves
     [SerializeField]
     private float damagePerAttack;      //How much damage each attack from a troop type does
     [SerializeField]

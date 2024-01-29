@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5905152336794642405}
   - component: {fileID: 4112954112102121079}
+  - component: {fileID: 1718235622136292874}
   m_Layer: 0
   m_Name: P1Castle(Prototype)
   m_TagString: Untagged
@@ -170,6 +171,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1718235622136292874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074704079011182836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1c36fdf28f2ef647ab5d69fed854210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StartingHealth: 100
 --- !u!1 &8568666009347775521
 GameObject:
   m_ObjectHideFlags: 0
