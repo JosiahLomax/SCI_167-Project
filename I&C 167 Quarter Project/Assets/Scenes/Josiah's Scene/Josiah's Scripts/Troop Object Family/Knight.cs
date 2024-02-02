@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Knight : MonoBehaviour
 {
-    private SOTroopDefinitions def;
+  
     // Start is called before the first frame update
     void Start()
     {
