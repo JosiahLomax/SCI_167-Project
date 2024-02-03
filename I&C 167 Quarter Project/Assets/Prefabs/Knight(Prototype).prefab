@@ -103,8 +103,8 @@ GameObject:
   - component: {fileID: 6651131422503661906}
   - component: {fileID: 8770196624076071414}
   - component: {fileID: 6864402909859185936}
-  - component: {fileID: 5938508984631170653}
-  - component: {fileID: 8272882506706125345}
+  - component: {fileID: 1794458854448498201}
+  - component: {fileID: 6425555292976014499}
   m_Layer: 0
   m_Name: Knight(Prototype)
   m_TagString: Troop
@@ -252,7 +252,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5938508984631170653
+--- !u!114 &1794458854448498201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -280,7 +280,7 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &8272882506706125345
+--- !u!114 &6425555292976014499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
