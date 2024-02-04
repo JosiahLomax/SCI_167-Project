@@ -43,6 +43,7 @@ public class GameStateManager : MonoBehaviour
     {
         state = GAMESTATE.PLAYING;
         SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
     }
 
 
