@@ -5,15 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
-    {
-        // unless we want to have different levels later on then ill add this
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex * 1);
-        // HELLO IS THIS WORKING??
+    public void StartGame()
+    { 
 
-        SceneManager.LoadScene(1);
+        GameStateManager.NewGame();
     }
 
+    public void OnClickResume()
+    {
+        GameStateManager.Resume();
+    }
     public void QuitGame()
     {
         Application.Quit();
