@@ -11,10 +11,6 @@ public class MainMenu : MonoBehaviour
         GameStateManager.NewGame();
     }
 
-    public void OnClickResume()
-    {
-        GameStateManager.Resume();
-    }
     public void QuitGame()
     {
         Application.Quit();

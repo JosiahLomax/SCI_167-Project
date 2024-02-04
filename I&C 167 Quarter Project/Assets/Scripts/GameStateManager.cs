@@ -38,16 +38,6 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            GameStateManager.TogglePause();
-        }
-    }
-
-
     //not done
     public static void NewGame()
     {
@@ -70,23 +60,24 @@ public class GameStateManager : MonoBehaviour
     }
 
 
-    public static void TogglePause()
-    {
-        if (state == GAMESTATE.PLAYING)
-        {
-            state = GAMESTATE.PAUSED;
-            Time.timeScale = 0;
-        }
-        else if(state == GAMESTATE.PAUSED)
-        {
-            state = GAMESTATE.PLAYING;
-            Time.timeScale = 1;
-        }
-    }
+    //public static void TogglePause()
+    //{
+    //    if (state == GAMESTATE.PLAYING)
+    //    {
+    //        state = GAMESTATE.PAUSED;
+    //        Time.timeScale = 0;
+    //    }
+    //    else if (state == GAMESTATE.PAUSED)
+    //    {
+    //        state = GAMESTATE.PLAYING;
+    //        Time.timeScale = 1;
+    //    }
+    //}
 
 
     public static void ResetScene()
     {
+        state = GAMESTATE.PLAYING;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
