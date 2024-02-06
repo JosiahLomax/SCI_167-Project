@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae750633a904744680d1327ea7a2195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Damage: 100
+  m_Damage: 34
+  parentPrefab: {fileID: 1792567730890473246}
 --- !u!61 &1562116832034578321
 BoxCollider2D:
   m_ObjectHideFlags: 0

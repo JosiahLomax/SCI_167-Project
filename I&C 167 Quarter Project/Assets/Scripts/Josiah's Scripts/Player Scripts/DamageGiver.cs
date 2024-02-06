@@ -7,7 +7,10 @@ public class DamageGiver : MonoBehaviour
     [SerializeField]
     protected int m_Damage;
 
+    [SerializeField]
+    private GameObject parentPrefab;
 
+   
     protected virtual void ApplyDamage(Player player)
     {
         player.ApplyDamage(m_Damage);
@@ -19,6 +22,7 @@ public class DamageGiver : MonoBehaviour
         {
             Player player = collison.gameObject.GetComponent<Player>();
             ApplyDamage(player);
+            Destroy(this.parentPrefab);
         }
     }
 }
