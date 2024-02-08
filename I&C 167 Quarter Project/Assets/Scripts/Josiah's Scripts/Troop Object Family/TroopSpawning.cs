@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class TroopSpawning : MonoBehaviour
-{
+        
+public class TroopSpawning : MonoBehaviour                                                      // Code written by Josiah Lomax                               
+{   
     [SerializeField]
-    private GameObject troopToSpawn;            //Takes the prefab of what troop is being spawned
+    private GameObject troopToSpawn;                                                             // Takes the prefab of the troop prototype that is being spawned
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,7 @@ public class TroopSpawning : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(troopToSpawn,transform.position,troopToSpawn.transform.rotation);           //After clicking space, the player will spawn in a troop at the position of the troop spawner
+            Instantiate(troopToSpawn,transform.position,troopToSpawn.transform.rotation);           // After clicking spacebar, the player will spawn in a troop prototype at the position of the troop spawner
         }
     }
 }
