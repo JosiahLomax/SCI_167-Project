@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 6864402909859185936}
   - component: {fileID: 1794458854448498201}
   - component: {fileID: 6425555292976014499}
+  - component: {fileID: -1111744103006463303}
   m_Layer: 0
   m_Name: Knight(Prototype)
   m_TagString: Troop
@@ -288,7 +289,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792567730890473246}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9cedc8f996d91b4d87d9e07edbd58af, type: 3}
   m_Name: 
@@ -296,3 +297,15 @@ MonoBehaviour:
   target: {fileID: 2300405810683515588, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
   speed: 500
   nextWaypointDistance: 3
+--- !u!114 &-1111744103006463303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792567730890473246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3efac4edfa96947a2bae1f01898404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
