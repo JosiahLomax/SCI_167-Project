@@ -17,6 +17,8 @@ public class TroopStateManager : MonoBehaviour
    public TroopShootingState ShootingState = new TroopShootingState();    // Instantiates the concrete Troop Shooting State
    public TroopShieldingState ShieldingState = new TroopShieldingState(); // Instantiates the concrete Troop ShieldingState
 
+   
+
     // Start is called before the first frame update
     void Start()
     {

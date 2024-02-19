@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Troop
+  - Player1Troop
+  - Player2Troop
   layers:
   - Default
   - TransparentFX
