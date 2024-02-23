@@ -16,11 +16,11 @@ public class TroopDamageGiver : MonoBehaviour
         troop.TakeDamage(Damage);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D trigger)
     {
-        if(collision.gameObject.tag == "Troop")
+        if(trigger.gameObject.tag == "Troop")
         {
-            TroopHealth troop = collision.gameObject.GetComponent<TroopHealth>();
+            TroopHealth troop = trigger.gameObject.GetComponent<TroopHealth>();
             TakeDamage(troop);
         }
     }

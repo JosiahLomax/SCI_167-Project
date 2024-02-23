@@ -199,12 +199,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2553920816018716120}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9cedc8f996d91b4d87d9e07edbd58af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 2300405810683515588, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
+  target: {fileID: 5905152336794642405, guid: 9fe511d0583a5324dab8824bd32d1c9e, type: 3}
   speed: 500
   nextWaypointDistance: 3
 --- !u!114 &8529871475760394034
@@ -266,7 +266,6 @@ GameObject:
   - component: {fileID: 8885410829279751814}
   - component: {fileID: 633485641008183575}
   - component: {fileID: 811903111585427108}
-  - component: {fileID: 723220654071866597}
   m_Layer: 0
   m_Name: DamageGiver
   m_TagString: Troop
@@ -348,17 +347,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &723220654071866597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7866937039180860902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69d3567fbfcd3af41a44939567c86a73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 34
-  parentPrefab: {fileID: 2553920816018716120}

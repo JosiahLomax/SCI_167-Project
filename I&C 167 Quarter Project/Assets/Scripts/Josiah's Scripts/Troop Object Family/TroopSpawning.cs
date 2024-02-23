@@ -20,5 +20,6 @@ public class TroopSpawning : MonoBehaviour                                      
         {
             Instantiate(troopToSpawn,transform.position,troopToSpawn.transform.rotation);           // After clicking spacebar, the player will spawn in a troop prototype at the position of the troop spawner
         }
+      
     }
 }

@@ -16,11 +16,11 @@ public class DamageGiver : MonoBehaviour                                //Code w
         player.ApplyDamage(m_Damage);                                   // References the Player class which hold the health, and applies damage to it.
     }
 
-    private void OnTriggerEnter2D(Collider2D collison)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collison.gameObject.tag == "Player")                         // If the damage giver object collides with a gameObject tagged 'player' it will call the ApplyDamage function
+        if(collision.gameObject.tag == "Player")                         // If the damage giver object collides with a gameObject tagged 'player' it will call the ApplyDamage function
         {
-            Player player = collison.gameObject.GetComponent<Player>(); // Gets the Player component from the object collided with
+            Player player = collision.gameObject.GetComponent<Player>(); // Gets the Player component from the object collided with
             ApplyDamage(player);
             Destroy(this.parentPrefab);                                 //Once the parent prefab collides with the object tagged 'player' it will be destroyed
         }
