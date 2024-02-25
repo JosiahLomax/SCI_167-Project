@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 5149389329513650387}
   - component: {fileID: 1578745819510291134}
   - component: {fileID: 2844861479699509709}
+  - component: {fileID: 8218205718602783892}
   - component: {fileID: 4589818730198326355}
   - component: {fileID: 4917369820346921119}
   - component: {fileID: 8529871475760394034}
   - component: {fileID: 5254329751891109208}
   - component: {fileID: 3062682530397416361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EnemyKnight(Prototype)
   m_TagString: Troop
   m_Icon: {fileID: 0}
@@ -38,6 +39,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8885410829279751814}
+  - {fileID: 4318680685128720742}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5149389329513650387
@@ -164,6 +166,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8218205718602783892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553920816018716120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d165c372f60420c458a7fabce848114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayCast: {fileID: 4318680685128720742}
+  agroRange: 12
+  moveSpeed: 4
+  player: {fileID: 0}
 --- !u!114 &4589818730198326355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,7 +217,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2553920816018716120}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9cedc8f996d91b4d87d9e07edbd58af, type: 3}
   m_Name: 
@@ -255,6 +273,37 @@ MonoBehaviour:
   startingHealth: 100
   maxHealth: 100
   parentPrefab: {fileID: 2553920816018716120}
+--- !u!1 &4363388754317206250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4318680685128720742}
+  m_Layer: 3
+  m_Name: rayCast
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4318680685128720742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4363388754317206250}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.87, y: 0.23, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4970385977859455038}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7866937039180860902
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +315,7 @@ GameObject:
   - component: {fileID: 8885410829279751814}
   - component: {fileID: 633485641008183575}
   - component: {fileID: 811903111585427108}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DamageGiver
   m_TagString: Troop
   m_Icon: {fileID: 0}

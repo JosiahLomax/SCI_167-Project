@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2974996304370209709}
   - component: {fileID: 5890532547865317812}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1792043450974750080}
   - component: {fileID: 7638727578449169825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 7917434463416747890}
   - component: {fileID: 7756758007104840949}
   - component: {fileID: 6752814729153573113}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P2Castle(Prototype)
   m_TagString: Player
   m_Icon: {fileID: 0}
