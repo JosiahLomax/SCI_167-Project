@@ -555,6 +555,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633133149}
   m_CullTransparentMesh: 1
+--- !u!1 &643069975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4674502910105599100, guid: c4a9e7a2e66d9284c8a422a8194a677f, type: 3}
+  m_PrefabInstance: {fileID: 477050046573008934}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &663571753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,6 +2102,68 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a9e7a2e66d9284c8a422a8194a677f, type: 3}
+--- !u!1001 &1381533696014112691
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1734665149638122, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+      propertyPath: m_Name
+      value: TroopSpawnPointP2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+--- !u!1 &4674502909776100821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1734665149638122, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
+  m_PrefabInstance: {fileID: 1381533696014112691}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6451848456239289352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2145,6 +2212,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5760125818450809114, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
+      propertyPath: troopSpawnPoint
+      value: 
+      objectReference: {fileID: 4674502909776100821}
     - target: {fileID: 7666653321607759911, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
       propertyPath: m_Name
       value: P2Castle(Prototype)
@@ -2206,6 +2277,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6150217880489825050, guid: 9fe511d0583a5324dab8824bd32d1c9e, type: 3}
+      propertyPath: troopSpawnPoint
+      value: 
+      objectReference: {fileID: 643069975}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2221,6 +2296,7 @@ SceneRoots:
   - {fileID: 7724836466751294146}
   - {fileID: 6451848456239289352}
   - {fileID: 477050046573008934}
+  - {fileID: 1381533696014112691}
   - {fileID: 663571755}
   - {fileID: 1653587835}
   - {fileID: 1677935053}

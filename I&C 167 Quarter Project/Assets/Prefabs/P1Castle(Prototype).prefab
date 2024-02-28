@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 4112954112102121079}
   - component: {fileID: 1718235622136292874}
   - component: {fileID: 475430236122184413}
+  - component: {fileID: 6150217880489825050}
   m_Layer: 0
   m_Name: P1Castle(Prototype)
   m_TagString: Untagged
@@ -230,6 +231,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8101926, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6150217880489825050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074704079011182836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eebd4169ad287242b384f19ed7612ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  troopSpawnPoint: {fileID: 0}
+  troopToSpawn: {fileID: 1792567730890473246, guid: efb8a8a58b22269459445f5c152fff64, type: 3}
 --- !u!1 &8568666009347775521
 GameObject:
   m_ObjectHideFlags: 0
