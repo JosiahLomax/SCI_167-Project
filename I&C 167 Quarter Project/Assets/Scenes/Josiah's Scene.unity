@@ -2212,13 +2212,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2680719470707786564, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298075696583587221, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5760125818450809114, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
       propertyPath: troopSpawnPoint
       value: 
       objectReference: {fileID: 4674502909776100821}
+    - target: {fileID: 6837071985233927829, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7666653321607759911, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
       propertyPath: m_Name
       value: P2Castle(Prototype)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7666653321607759911, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2233,9 +2249,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1330446972660020702, guid: 9fe511d0583a5324dab8824bd32d1c9e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2074704079011182836, guid: 9fe511d0583a5324dab8824bd32d1c9e, type: 3}
       propertyPath: m_Name
       value: P1Castle(Prototype)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2074704079011182836, guid: 9fe511d0583a5324dab8824bd32d1c9e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5905152336794642405, guid: 9fe511d0583a5324dab8824bd32d1c9e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2281,6 +2305,10 @@ PrefabInstance:
       propertyPath: troopSpawnPoint
       value: 
       objectReference: {fileID: 643069975}
+    - target: {fileID: 8568666009347775521, guid: 9fe511d0583a5324dab8824bd32d1c9e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

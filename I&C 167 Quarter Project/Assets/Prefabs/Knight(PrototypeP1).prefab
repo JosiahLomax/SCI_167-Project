@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8155934073059699125}
   - component: {fileID: 4811933385562261106}
   - component: {fileID: 1562116832034578321}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: DamageGiver
   m_TagString: Troop
   m_Icon: {fileID: 0}
@@ -92,6 +92,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &348273147931459381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6775058379122717954}
+  m_Layer: 3
+  m_Name: rayCast
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6775058379122717954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348273147931459381}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8, y: 0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5224306904760583238}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1792567730890473246
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +137,8 @@ GameObject:
   - component: {fileID: 6864402909859185936}
   - component: {fileID: 5938508984631170653}
   - component: {fileID: 8272882506706125345}
-  m_Layer: 0
+  - component: {fileID: 1726687639478248653}
+  m_Layer: 3
   m_Name: Knight(PrototypeP1)
   m_TagString: Troop
   m_Icon: {fileID: 0}
@@ -127,6 +159,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8155934073059699125}
+  - {fileID: 6775058379122717954}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6651131422503661906
@@ -296,3 +329,19 @@ MonoBehaviour:
   target: {fileID: 2300405810683515588, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
   speed: 500
   nextWaypointDistance: 3
+--- !u!114 &1726687639478248653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792567730890473246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d165c372f60420c458a7fabce848114d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayCast: {fileID: 6775058379122717954}
+  agroRange: 14
+  moveSpeed: 3
+  targetPlayer: {fileID: 7666653321607759911, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
