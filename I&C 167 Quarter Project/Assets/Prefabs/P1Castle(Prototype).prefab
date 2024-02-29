@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5123063300119447442}
   - component: {fileID: 159671314148690859}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 1718235622136292874}
   - component: {fileID: 475430236122184413}
   - component: {fileID: 6150217880489825050}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P1Castle(Prototype)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_StartingHealth: 100
+  slider: {fileID: 0}
 --- !u!61 &475430236122184413
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -255,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3350833090329819344}
   - component: {fileID: 1501319792936306314}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}

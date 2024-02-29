@@ -14,11 +14,16 @@ public class KnightStateMachine : MonoBehaviour
     public LayerMask enemyLayer;
     public KnightMovement knightMovement;
 
+    [SerializeField]
+    private Animator knightAnimator;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        knightState = KnightState.Idle;
+        //knightState = KnightState.Idle;
+        Idle();
     }
 
     // Update is called once per frame
@@ -35,11 +40,28 @@ public class KnightStateMachine : MonoBehaviour
             {
                 knightState = KnightState.Swinging;
                 knightMovement.enabled = false;
+                Swinging(); // Would call the Swinging method below which sets the swinging animation.
             }
             // Now what is happening here is when the knight's Raycast detects and collides with something that is not null, the State changes from Walking to Swinging.
+        
         }
+      
+    }
+
+    public void Idle()
+    {
+        knightState = KnightState.Idle;
+        Debug.Log("Knight is in Idle State!");
+        //Set the idle animation here. We could do this through the state machince in an animator controller with boolean values.
+    }
+
+    public void Swinging()
+    {
+        // Set swinging animation here. 
+        Debug.Log("Knight is in Swinging State!");
     }
 }
+
 
 public enum KnightState
 {

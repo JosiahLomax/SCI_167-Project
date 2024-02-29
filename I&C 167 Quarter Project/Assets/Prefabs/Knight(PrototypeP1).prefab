@@ -90,7 +90,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.3, y: 1.7}
   m_EdgeRadius: 0
 --- !u!1 &348273147931459381
 GameObject:
@@ -117,7 +117,7 @@ Transform:
   m_GameObject: {fileID: 348273147931459381}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 0.3, z: 0}
+  m_LocalPosition: {x: 0.8, y: -0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 8272882506706125345}
   - component: {fileID: 1726687639478248653}
   - component: {fileID: 219772398412722443}
+  - component: {fileID: 5333124598886184960}
   - component: {fileID: -4308230818244312931}
   - component: {fileID: 1703878134674976101}
   m_Layer: 3
@@ -287,7 +288,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.3, y: 1.7}
   m_EdgeRadius: 0
 --- !u!114 &5938508984631170653
 MonoBehaviour:
@@ -346,7 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rayCast: {fileID: 6775058379122717954}
   agroRange: 14
-  moveSpeed: 3
+  moveSpeed: 2
   targetPlayer: {fileID: 7666653321607759911, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
 --- !u!95 &219772398412722443
 Animator:
@@ -369,7 +370,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-4308230818244312931
+--- !u!114 &5333124598886184960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -377,6 +378,28 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792567730890473246}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8b635a0f8ee9a47a823f1816820f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knightRB: {fileID: 0}
+  rayCast: {fileID: 6775058379122717954}
+  agroRange: 12
+  moveSpeed: 1
+  enemyPlayer2Layer:
+    serializedVersion: 2
+    m_Bits: 512
+  enemyTroopLayerP2:
+    serializedVersion: 2
+    m_Bits: 1024
+--- !u!114 &-4308230818244312931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792567730890473246}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad39e291c56f7554bb262467f3e24148, type: 3}
   m_Name: 
@@ -390,7 +413,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792567730890473246}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 746efd33181a44040bdc2325df3bcc58, type: 3}
   m_Name: 
@@ -401,3 +424,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   knightMovement: {fileID: -4308230818244312931}
+  knightAnimator: {fileID: 0}

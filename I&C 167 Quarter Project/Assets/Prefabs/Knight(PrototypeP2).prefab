@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3180343160532952358}
   - component: {fileID: 7559645689287811136}
   - component: {fileID: 680819808090671400}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Knight(PrototypeP2)
   m_TagString: Troop
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &729369479264537714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871661248081759676}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d165c372f60420c458a7fabce848114d, type: 3}
   m_Name: 
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 7303061717253837115}
   - component: {fileID: 5642422343310147147}
   - component: {fileID: 6716108544468961591}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DamageGiver
   m_TagString: Troop
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3272569511516805044}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rayCast
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
