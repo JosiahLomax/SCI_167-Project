@@ -11,8 +11,7 @@ public class AITroopSpawner : MonoBehaviour
         /* level 1 AI player has 3 knights and 2 archers spawning??
          maybe we add more levels? */
 
-        SpawnAIKnight();
-        SpawnAIArcher();
+        // SpawnAIArcher();
         
     }
 

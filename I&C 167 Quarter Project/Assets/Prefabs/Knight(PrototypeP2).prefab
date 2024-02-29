@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3180343160532952358}
   - component: {fileID: 7559645689287811136}
   - component: {fileID: 680819808090671400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Knight(PrototypeP2)
   m_TagString: Troop
   m_Icon: {fileID: 0}
