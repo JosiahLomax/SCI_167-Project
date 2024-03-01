@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour                                              // Code written by Josiah Lomax and Sho Nakata
 {
     [SerializeField]
     private int m_StartingHealth;                                               // Creates a field within the Unity editor where we can change how much starting health we want
-
 
     private int m_MaxHealth;                                                   // The amount of health for the player we want as the max amount possible
 
@@ -34,9 +34,11 @@ public class Player : MonoBehaviour                                             
         Debug.Log("Player Damaged! " + damage);                        // Displays the string 'Player Damaged!' within the debug log, followed by the value of damage dealt
         m_CurrentHealth -= damage;                                    // Subtracts the value of damage dealt from the player's current health
 
-        if (m_CurrentHealth <= 0)                                     // If the player's current health is 0 or below, a string will appear in the debug log stating the castle has been sieged
+        // for now!!
+        if (m_CurrentHealth <= 99)                                     // If the player's current health is 0 or below, a string will appear in the debug log stating the castle has been sieged
         {
             Debug.Log("Castle Sieged!");
+            SceneManager.LoadScene(3);
             //Player loses
         }
     }
