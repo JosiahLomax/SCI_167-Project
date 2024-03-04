@@ -386,8 +386,8 @@ MonoBehaviour:
   rayCast: {fileID: 6775058379122717954}
   agroRange: 12
   moveSpeed: 1
-  enemyCastle: {fileID: 7666653321607759911, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
-  enemyTroop: {fileID: 1871661248081759676, guid: ca52ab1ac6caf5e42bd5ddf69d74fb19, type: 3}
+  enemyCastle: {fileID: 0}
+  enemyTroop: {fileID: 0}
   enemyPlayer2Layer:
     serializedVersion: 2
     m_Bits: 512
