@@ -382,10 +382,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c8b635a0f8ee9a47a823f1816820f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knightRB: {fileID: 0}
+  knightRB: {fileID: 8770196624076071414}
   rayCast: {fileID: 6775058379122717954}
   agroRange: 12
   moveSpeed: 1
+  enemyCastle: {fileID: 7666653321607759911, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
+  enemyTroop: {fileID: 0}
   enemyPlayer2Layer:
     serializedVersion: 2
     m_Bits: 512
@@ -413,7 +415,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792567730890473246}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 746efd33181a44040bdc2325df3bcc58, type: 3}
   m_Name: 

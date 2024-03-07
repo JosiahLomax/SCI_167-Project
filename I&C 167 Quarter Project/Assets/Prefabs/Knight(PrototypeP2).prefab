@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 3180343160532952358}
   - component: {fileID: 7559645689287811136}
   - component: {fileID: 680819808090671400}
+  - component: {fileID: 1848347218052625088}
+  - component: {fileID: 7044057725828694314}
   m_Layer: 10
   m_Name: Knight(PrototypeP2)
   m_TagString: Troop
@@ -32,7 +34,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -5, y: 0.8, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7303061717253837115}
@@ -81,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 56c51afd8db5ffa41a505bd50076431f, type: 3}
-  m_Color: {r: 0.7725491, g: 0.41176474, b: 0.36078432, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -150,18 +152,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.09846913, y: 0.019693911}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.34375, y: 0.25, z: 0.125, w: 0.21875}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5516335, y: 0.6168382}
   m_EdgeRadius: 0
 --- !u!114 &3180343160532952358
 MonoBehaviour:
@@ -222,6 +224,49 @@ MonoBehaviour:
   agroRange: 14
   moveSpeed: 3
   targetPlayer: {fileID: 2074704079011182836, guid: 9fe511d0583a5324dab8824bd32d1c9e, type: 3}
+--- !u!114 &1848347218052625088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871661248081759676}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c0c7b6135cb4a41a0897f7b4e86b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  P1target: {fileID: 0}
+  damage: 0
+  P2KnightRB: {fileID: 0}
+  rayCast: {fileID: 3272569511516805044}
+  agroRange: 12
+  movementSpeed: 1
+  enemyPlayer1Layer:
+    serializedVersion: 2
+    m_Bits: 128
+  enemyTroopLayerP1:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &7044057725828694314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871661248081759676}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d6ba35e24f7464fa07239099e3768e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knightState: 0
+  detectionRange: 1
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  knightMovement: {fileID: 0}
+  knightAnimator: {fileID: 0}
 --- !u!1 &1982162085871589993
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +346,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.106377184, y: 0.008761376}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -312,7 +357,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.49432576, y: 0.49768418}
   m_EdgeRadius: 0
 --- !u!1 &3625164044422105935
 GameObject:
@@ -339,7 +384,7 @@ Transform:
   m_GameObject: {fileID: 3625164044422105935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 0.3, z: 0}
+  m_LocalPosition: {x: 0.3, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
