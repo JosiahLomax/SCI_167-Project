@@ -16,7 +16,7 @@ public class KnightV2 : MonoBehaviour
     [SerializeField]
     private GameObject enemyCastle;
     [SerializeField]
-    private GameObject enemyTroop;
+     private GameObject enemyTroop;
 
 
     private bool canSeePlayer = false;

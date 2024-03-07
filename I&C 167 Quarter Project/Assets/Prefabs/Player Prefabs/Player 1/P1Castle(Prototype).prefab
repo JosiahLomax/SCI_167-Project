@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5123063300119447442}
   - component: {fileID: 159671314148690859}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 1718235622136292874}
   - component: {fileID: 475430236122184413}
   - component: {fileID: 6150217880489825050}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: P1Castle(Prototype)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -245,7 +245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   troopSpawnPoint: {fileID: 0}
-  troopToSpawn: {fileID: 1792567730890473246, guid: efb8a8a58b22269459445f5c152fff64, type: 3}
+  KnightToSpawn: {fileID: 1792567730890473246, guid: efb8a8a58b22269459445f5c152fff64, type: 3}
+  ArcherToSpawn: {fileID: 7855352803409113488, guid: 5052808ab678c9c448ca1fa4ebf10e47, type: 3}
 --- !u!1 &8568666009347775521
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,7 +257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3350833090329819344}
   - component: {fileID: 1501319792936306314}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
