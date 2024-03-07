@@ -8,7 +8,10 @@ public class Player1Control : MonoBehaviour
     private GameObject troopSpawnPoint;
 
     [SerializeField]
-    private GameObject troopToSpawn;
+    private GameObject KnightToSpawn;
+    [SerializeField]
+    private GameObject ArcherToSpawn;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +22,14 @@ public class Player1Control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            Instantiate(troopToSpawn, troopSpawnPoint.transform.position, troopToSpawn.transform.rotation);           // After clicking spacebar, the player will spawn in a troop prototype at the position of the troop spawner
+            Instantiate(KnightToSpawn, troopSpawnPoint.transform.position, KnightToSpawn.transform.rotation);           // After clicking spacebar, the player will spawn in a troop prototype at the position of the troop spawner
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            Instantiate(ArcherToSpawn, troopSpawnPoint.transform.position, ArcherToSpawn.transform.rotation);
         }
     }
 }
