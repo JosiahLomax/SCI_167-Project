@@ -148,7 +148,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.00000013411045, y: 0.000000022351742}
   m_SpriteTilingProperty:
     border: {x: 0.34375, y: 0.25, z: 0.125, w: 0.21875}
     pivot: {x: 0.5, y: 0.5}
@@ -159,7 +159,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5676625, y: 0.6168382}
+  m_Size: {x: 0.49743906, y: 0.49745834}
   m_EdgeRadius: 0
 --- !u!114 &7044057725828694314
 MonoBehaviour:
@@ -191,6 +191,8 @@ GameObject:
   - component: {fileID: 7303061717253837115}
   - component: {fileID: 5642422343310147147}
   - component: {fileID: 6716108544468961591}
+  - component: {fileID: 7945632236079285744}
+  - component: {fileID: 8549159319413901704}
   m_Layer: 10
   m_Name: DamageGiver
   m_TagString: Troop
@@ -272,6 +274,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49432576, y: 0.49768418}
   m_EdgeRadius: 0
+--- !u!114 &7945632236079285744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982162085871589993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f36dca74e224b43bea5ef8603d1f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 10
+  parentPrefab: {fileID: 1871661248081759676}
+--- !u!114 &8549159319413901704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982162085871589993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f36dca74e224b43bea5ef8603d1f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 10
+  parentPrefab: {fileID: 1871661248081759676}
 --- !u!1 &3625164044422105935
 GameObject:
   m_ObjectHideFlags: 0
