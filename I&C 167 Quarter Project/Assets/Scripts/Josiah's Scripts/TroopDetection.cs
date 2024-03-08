@@ -23,6 +23,7 @@ public class TroopDetection : MonoBehaviour
 
     public LayerMask enemyTroopLayerP2;
 
+    public KnightState knightState;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +49,7 @@ public class TroopDetection : MonoBehaviour
         if (hitTroop.collider == true)
         {
             canSeeTroop = true;
+            Debug.Log("Enemy Troop Detected!");
             StartCoroutine(TroopDetected());
             
         }
@@ -63,7 +65,8 @@ public class TroopDetection : MonoBehaviour
         if (canSeeTroop == true)
         {
             yield return new WaitForSeconds(1);
-            Debug.Log("Enemy Troop Detected!");
+            knightState = KnightState.Walking;
+            Debug.Log("Knight is in the Walking State!");
             MoveToTroop();
         }
     }
