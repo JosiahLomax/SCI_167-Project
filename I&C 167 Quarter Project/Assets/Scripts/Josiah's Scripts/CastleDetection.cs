@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Code Written by Josiah Lomax
-public class KnightV2 : MonoBehaviour
+public class CastleDetection : MonoBehaviour
 {
     [SerializeField]
     private Rigidbody2D knightRB;
@@ -22,7 +22,7 @@ public class KnightV2 : MonoBehaviour
 
 
 
-
+    public KnightState knightState;
     public LayerMask enemyPlayer2Layer; 
     
     // Start is called before the first frame update
@@ -61,6 +61,8 @@ public class KnightV2 : MonoBehaviour
         if (canSeePlayer == true)
         {
             yield return new WaitForSeconds(2);
+            knightState = KnightState.Walking;
+            Debug.Log("Knight is in the Walking State!");
             MoveToPlayer();
         }
     }
