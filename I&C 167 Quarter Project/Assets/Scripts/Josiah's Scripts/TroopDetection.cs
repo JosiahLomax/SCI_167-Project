@@ -17,6 +17,7 @@ public class TroopDetection : MonoBehaviour
     private float moveSpeed;
     [SerializeField]
     private GameObject enemyTroop;
+   
 
     private bool canSeeTroop = false;
     private bool facingRight = true;
@@ -24,6 +25,12 @@ public class TroopDetection : MonoBehaviour
     public LayerMask enemyTroopLayerP2;
 
     public KnightState knightState;
+
+    
+
+
+   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,12 +43,12 @@ public class TroopDetection : MonoBehaviour
         CheckForTroop();
     }
 
-
+    
     private void OnDrawGizmos()
     {
         Gizmos.DrawRay(rayCast.transform.position, (facingRight ? Vector2.right : Vector2.left) * agroRange);
     }
-
+    
     void CheckForTroop()
     {
         RaycastHit2D hitTroop = Physics2D.Raycast(rayCast.transform.position, facingRight ? Vector2.right : Vector2.left, agroRange, enemyTroopLayerP2);
@@ -49,8 +56,8 @@ public class TroopDetection : MonoBehaviour
         if (hitTroop.collider == true)
         {
             canSeeTroop = true;
-            Debug.Log("Enemy Troop Detected!");
-            StartCoroutine(TroopDetected());
+             Debug.Log("Enemy Troop Detected!");
+             StartCoroutine(TroopDetected());
             
         }
         else if(hitTroop.collider != true)
@@ -71,7 +78,7 @@ public class TroopDetection : MonoBehaviour
         }
     }
 
-    void MoveToTroop()
+    public void MoveToTroop()
     {
         if (transform.position.x > enemyTroop.transform.position.x)
         {
@@ -83,7 +90,7 @@ public class TroopDetection : MonoBehaviour
         }
     }
 
-    void StopMoveToTroop()
+   public void StopMoveToTroop()
     {
         troopRB.velocity = new Vector2(0, 0);
     }

@@ -70,12 +70,12 @@ public class CastleDetection : MonoBehaviour
 
 
    
-  
+ 
     private void OnDrawGizmos()
     {
         Gizmos.DrawRay(rayCast.transform.position, (facingRight ? Vector2.right : Vector2.left) * agroRange);
     }
-
+  
     
 
 
