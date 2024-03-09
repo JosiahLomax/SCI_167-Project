@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2459670667992120698}
   - component: {fileID: 8621443551608601583}
+  - component: {fileID: 3587627592492794358}
   m_Layer: 0
   m_Name: TroopSpawnPointP1
   m_TagString: Untagged
@@ -45,3 +46,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   troopToSpawn: {fileID: 1792567730890473246, guid: efb8a8a58b22269459445f5c152fff64, type: 3}
+--- !u!114 &3587627592492794358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674502910105599100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eebd4169ad287242b384f19ed7612ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  troopSpawnPoint: {fileID: 4674502910105599100}
+  KnightToSpawn: {fileID: 7223515366915071718, guid: 7cccfd00f1202db43b8cc6ae54ec637f, type: 3}
+  ArcherToSpawn: {fileID: 7855352803409113488, guid: 5052808ab678c9c448ca1fa4ebf10e47, type: 3}
