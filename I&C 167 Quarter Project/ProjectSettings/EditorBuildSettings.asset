@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Jacklyn's Scene.unity
     guid: afbaa654c7eadb340b202348e1e24ca8
   - enabled: 1
+    path: Assets/Scenes/ModeSelect Scene.unity
+    guid: 85471bf9b7026ae4f984a9b3923d89e9
+  - enabled: 1
     path: Assets/Scenes/Josiah's Scene.unity
     guid: 513a44c5b8139fd40b1c6fc1faf43b5f
+  - enabled: 1
+    path: Assets/Scenes/AI Game Scene.unity
+    guid: abeb98b197fa7ef4fad184d1ba289489
+  - enabled: 1
+    path: Assets/Scenes/GameOver Scene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

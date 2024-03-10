@@ -9,6 +9,7 @@ public class GameStateManager : MonoBehaviour
 {
     // makes it so we can grab it from anywhere
     public static GameStateManager Instance;
+    public static GameOverScript gameOverScript;
 
 
     enum GAMESTATE
@@ -40,10 +41,17 @@ public class GameStateManager : MonoBehaviour
     }
 
     //not done
-    public static void NewGame()
+    public static void NewGameCom()
     {
         state = GAMESTATE.PLAYING;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
+        Time.timeScale = 1f;
+    }
+
+    public static void NewGameP2()
+    {
+        state = GAMESTATE.PLAYING;
+        SceneManager.LoadScene(3);
         Time.timeScale = 1f;
     }
 
@@ -54,10 +62,16 @@ public class GameStateManager : MonoBehaviour
     }
 
 
+    public static void GameOverWin()
+    {
+        // will show game over scene
+        state = GAMESTATE.GAMEOVER;
+        gameOverScript.Showp1WinScreen();
+    }
+
     public static void GameOver()
     {
-        // i might change this later to a diff scene for endgame result??
-        state = GAMESTATE.MENU;
+        state = GAMESTATE.GAMEOVER;
         SceneManager.LoadScene(0);
     }
 
