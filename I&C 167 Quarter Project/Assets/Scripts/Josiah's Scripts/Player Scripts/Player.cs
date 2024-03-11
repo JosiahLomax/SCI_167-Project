@@ -11,7 +11,7 @@ public class Player : MonoBehaviour                                             
 
     private int m_MaxHealth;                                                   // The amount of health for the player we want as the max amount possible
 
-    private int m_CurrentHealth;                                              // The current health that is being given to the player
+    public int m_CurrentHealth;                                              // The current health that is being given to the player
     
     public Slider slider;
 

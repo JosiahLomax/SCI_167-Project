@@ -9,7 +9,7 @@ public class TroopHealth : MonoBehaviour
     private int StartingHealth;
 
     private int MaxHealth;
-    private int CurrentHealth;
+    public int CurrentHealth;
     
 
    
@@ -24,6 +24,10 @@ public class TroopHealth : MonoBehaviour
     void Update()
     {
         Debug.Log("Troop has " + CurrentHealth + " health!");
+        if(CurrentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
 
