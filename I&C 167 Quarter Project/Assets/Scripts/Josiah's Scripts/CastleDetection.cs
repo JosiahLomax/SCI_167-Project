@@ -45,13 +45,13 @@ public class CastleDetection : MonoBehaviour
         if (hitPlayer.collider == true)
         {
             canSeePlayer = true;
-            Debug.Log("Player Detected!");
             StartCoroutine(PlayerDetected()); 
         }
         else  if (hitPlayer.collider != true)
         {
             canSeePlayer = false;
             StopMoveToPlayer();
+            Debug.Log("Player Not Detected!");
         }
        
     }
@@ -60,6 +60,7 @@ public class CastleDetection : MonoBehaviour
     {
         if (canSeePlayer == true)
         {
+            Debug.Log("Player Detected!");
             yield return new WaitForSeconds(2);
             knightState = KnightState.Walking;
             Debug.Log("Knight is in the Walking State!");
