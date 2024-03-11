@@ -35,7 +35,7 @@ public class Player : MonoBehaviour                                             
         m_CurrentHealth -= damage;                                    // Subtracts the value of damage dealt from the player's current health
 
         // for now!!
-        if (m_CurrentHealth <= 99)                                     // If the player's current health is 0 or below, a string will appear in the debug log stating the castle has been sieged
+        if (m_CurrentHealth <= 0)                                     // If the player's current health is 0 or below, a string will appear in the debug log stating the castle has been sieged
         {
             Debug.Log("Castle Sieged!");
             GameStateManager.GameOverWin();

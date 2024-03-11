@@ -35,12 +35,15 @@ public class TroopDetection : MonoBehaviour
     void Start()
     {
         troopRB = GetComponent<Rigidbody2D>();
+      
+      
     }
 
     // Update is called once per frame
     void Update()
     {
         CheckForTroop();
+       
     }
 
     
@@ -56,35 +59,40 @@ public class TroopDetection : MonoBehaviour
         if (hitTroop.collider == true)
         {
             canSeeTroop = true;
-             Debug.Log("Enemy Troop Detected!");
-             StartCoroutine(TroopDetected());
+            StartCoroutine(TroopDetected());
             
         }
         else if(hitTroop.collider != true)
         {
             canSeeTroop = false;
+            Debug.Log("Troop Not Detected!");
             StopMoveToTroop();
         }
+      
     }
 
+    
     IEnumerator TroopDetected()
     {
         if (canSeeTroop == true)
         {
+            Debug.Log("Enemy Troop Detected!");
             yield return new WaitForSeconds(1);
             knightState = KnightState.Walking;
-            Debug.Log("Knight is in the Walking State!");
             MoveToTroop();
+            Debug.Log("Knight is in the Walking State!");
+            
         }
     }
-
+    
+    
     public void MoveToTroop()
     {
-        if (transform.position.x > enemyTroop.transform.position.x)
+        if (transform.position.x < enemyTroop.transform.position.x)
         {
             troopRB.velocity = new Vector2(moveSpeed, 0);
         }
-        else if (transform.position.x < enemyTroop.transform.position.x)
+        else if (transform.position.x > enemyTroop.transform.position.x)
         {
             troopRB.velocity = new Vector2(-moveSpeed, 0);
         }
