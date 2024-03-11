@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9029721179897490487}
   - component: {fileID: 7044057725828694314}
   - component: {fileID: 5315334250586601195}
+  - component: {fileID: 4337930155527092732}
   m_Layer: 10
   m_Name: Knight(PrototypeP2)
   m_TagString: Troop
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 5, y: 0.876, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6344813868578168952}
@@ -128,6 +129,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.54384834, y: 0.53897923}
   m_EdgeRadius: 0
+--- !u!114 &4337930155527092732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871661248081759676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 536b8272e530eb6488e5b70c0435358f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingHealth: 100
+  CurrentHealth: 100
 --- !u!1 &1982162085871589993
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,7 +154,6 @@ GameObject:
   - component: {fileID: 7303061717253837115}
   - component: {fileID: 5642422343310147147}
   - component: {fileID: 7945632236079285744}
-  - component: {fileID: 8549159319413901704}
   - component: {fileID: 2884317436827913744}
   m_Layer: 10
   m_Name: DamageGiver
@@ -158,7 +172,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4439212898195723658}
@@ -178,20 +192,6 @@ MonoBehaviour:
   m_Damage: 34
   parentPrefab: {fileID: 1871661248081759676}
 --- !u!114 &7945632236079285744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982162085871589993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74f36dca74e224b43bea5ef8603d1f2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 10
-  parentPrefab: {fileID: 1871661248081759676}
---- !u!114 &8549159319413901704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 3272569511516805044}
   m_Layer: 10
   m_Name: rayCast
-  m_TagString: Untagged
+  m_TagString: Troop
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,7 +276,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.3, y: 0.15, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4439212898195723658}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 569983326793786579}
   m_Layer: 10
   m_Name: KnightSprite
-  m_TagString: Untagged
+  m_TagString: Troop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,7 +308,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4439212898195723658}
