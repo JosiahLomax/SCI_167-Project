@@ -76,7 +76,7 @@ public class TroopDetection : MonoBehaviour
     {
         if (canSeeTroop == true)
         {
-            Debug.Log("Enemy Troop Detected!");
+            Debug.Log("Player 2 Troop Detected!");
             yield return new WaitForSeconds(1);
             knightState = KnightState.Walking;
             MoveToTroop();
