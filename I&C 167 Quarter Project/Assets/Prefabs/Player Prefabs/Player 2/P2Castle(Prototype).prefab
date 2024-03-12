@@ -302,6 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_StartingHealth: 100
+  m_CurrentHealth: 0
   slider: {fileID: 0}
 --- !u!61 &6752814729153573113
 BoxCollider2D:

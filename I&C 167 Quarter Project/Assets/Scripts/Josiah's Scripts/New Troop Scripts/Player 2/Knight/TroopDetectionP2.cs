@@ -31,7 +31,7 @@ public class TroopDetectionP2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckForTroop();
+       CheckForTroop();
     }
 
 
@@ -43,7 +43,7 @@ public class TroopDetectionP2 : MonoBehaviour
         {
             Debug.Log("Player 1 Troop Detected!");
             canSeeTroop = true;
-            MoveToTroop();
+            Invoke("MoveToTroop", 1);
         }
         else if(hitTroop.collider != true)
         {
@@ -54,6 +54,7 @@ public class TroopDetectionP2 : MonoBehaviour
 
     public void MoveToTroop()
     {
+        knightState = KnightState.Walking;
         if (canSeeTroop == true)
         {
             if (transform.position.x < enemyTroop.transform.position.x)
@@ -65,6 +66,7 @@ public class TroopDetectionP2 : MonoBehaviour
                 troopRB.velocity = new Vector2(-moveSpeed, 0);
             }
         }
+        Debug.Log("Player 2 Knight is in Walking State");
     }
 
     public void StopMoveToTroop()

@@ -15,6 +15,8 @@ public class CastleDetection : MonoBehaviour
     private float moveSpeed;
     [SerializeField]
     private GameObject enemyCastle;
+    [SerializeField]
+    private Animator knightAnimator;
    
 
     private bool canSeePlayer = false;
@@ -44,31 +46,17 @@ public class CastleDetection : MonoBehaviour
 
         if (hitPlayer.collider == true)
         {
+            Debug.Log("Player 2 Castle Detected!");
             canSeePlayer = true;
-            StartCoroutine(PlayerDetected()); 
+            Invoke("MoveToPlayer", 1);
         }
         else  if (hitPlayer.collider != true)
         {
             canSeePlayer = false;
-            StopMoveToPlayer();
-            Debug.Log("Player Not Detected!");
+            Debug.Log("Player 2 Castle Not Detected!");
         }
        
     }
-
-   IEnumerator PlayerDetected()
-    {
-        if (canSeePlayer == true)
-        {
-            Debug.Log("Player Detected!");
-            yield return new WaitForSeconds(2);
-            knightState = KnightState.Walking;
-            Debug.Log("Knight is in the Walking State!");
-            MoveToPlayer();
-        }
-    }
-  
-
 
    
  
@@ -83,6 +71,7 @@ public class CastleDetection : MonoBehaviour
     // Code that Moves the Knight to the Enemy's Castle
     void MoveToPlayer()
     {
+        knightState = KnightState.Walking;
        if(canSeePlayer == true)
        {
             if(transform.position.x < enemyCastle.transform.position.x)
@@ -94,14 +83,13 @@ public class CastleDetection : MonoBehaviour
                 knightRB.velocity = new Vector2(-moveSpeed, 0);
             }
        }
-       
+        Debug.Log("Player 1 Knight is in Walking State!");
     }
 
 
     void StopMoveToPlayer()
     {
             knightRB.velocity = new Vector2(0, 0);
-            Debug.Log("Player Not Detected!");
     }
 
 }
