@@ -5,26 +5,18 @@ using UnityEngine;
 // PARENT CLASS FOR AI ENEMY
 public class AIEnemy : MonoBehaviour   // coded by Jacklyn
 {
-    public Transform target; //target will be player's troops/tower
-    public float movementSpeed; //used for all types of troops
-   
-    protected virtual void Start()
+    [SerializeField]
+    private Rigidbody2D knightRb;
+
+    [SerializeField]
+    private Rigidbody2D archerRb;
+
+    [SerializeField]
+    private float movementSpeed; //used for all types of troops
+
+    private void FixedUpdate()
     {
-        MoveTowardTarget();
-    }
-
-    protected virtual void Update()
-    {
-        
-    }
-
-    protected virtual void MoveTowardTarget()
-    {
-
-    }
-
-    protected virtual void AttackTarget()
-    {
-
+        knightRb.velocity = Vector2.left * movementSpeed;
+        archerRb.velocity = Vector2.left * movementSpeed;
     }
 }
