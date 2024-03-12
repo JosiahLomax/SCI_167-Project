@@ -69,7 +69,7 @@ public class CastleDetection : MonoBehaviour
 
 
     // Code that Moves the Knight to the Enemy's Castle
-    void MoveToPlayer()
+    public void MoveToPlayer()
     {
         knightState = KnightState.Walking;
        if(canSeePlayer == true)
@@ -87,7 +87,7 @@ public class CastleDetection : MonoBehaviour
     }
 
 
-    void StopMoveToPlayer()
+    public void StopMoveToPlayer()
     {
             knightRB.velocity = new Vector2(0, 0);
     }
