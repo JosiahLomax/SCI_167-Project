@@ -3,19 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // child class of AIEnemy
-public class AIarcher : AIEnemy
-{
-    protected override void MoveTowardTarget()
-    {
-        //base.MoveTowardTarget();
-
-        //movementSpeed/2 so they walk slower than knights idk lol
-        transform.Translate(Vector3.forward * (movementSpeed / 2) * Time.deltaTime);
-
-    }
-
-    protected override void AttackTarget()
-    {
-        // archer does 3 damamge but low hp
-    }
-}
+//public class AIarcher : AIstateMachine
+//{
+//    private void Update()
+//    {
+//        if (archerState == ArcherState.Walking)
+//        {
+//            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, detectionRange, enemyLayer);
+//            if (hit.collider != null) //if raycast finds enemy layer (not null/empty), change states
+//            {
+//                archerState = ArcherState.Shooting;
+//            }
+//        }
+//    }
+//}
