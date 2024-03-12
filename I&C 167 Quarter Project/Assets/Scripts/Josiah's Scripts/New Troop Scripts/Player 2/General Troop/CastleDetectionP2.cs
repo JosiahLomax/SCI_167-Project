@@ -41,14 +41,14 @@ public class CastleDetectionP2 : MonoBehaviour
 
         if(hitPlayer.collider == true)
         {
-            Debug.Log("Player Detected!");
+            Debug.Log("Player 1 Castle Detected!");
             canSeePlayer = true;
-            MoveToPlayer();
+            Invoke("MoveToPlayer", 1);
         }
         else if(hitPlayer.collider != true)
         {
             canSeePlayer = false;
-            Debug.Log("Player Not Detected!");
+            Debug.Log("Player 1 Castle Not Detected!");
         }
     }
 
@@ -59,7 +59,8 @@ public class CastleDetectionP2 : MonoBehaviour
 
     public void MoveToPlayer()
     {
-        if(canSeePlayer == true)
+        knightState = KnightState.Walking;
+        if (canSeePlayer == true)
         {
             if(transform.position.x < enemyCastle.transform.position.x)
             {
@@ -70,6 +71,7 @@ public class CastleDetectionP2 : MonoBehaviour
                 knightRB.velocity = new Vector2(-moveSpeed, 0);
             }
         }
+        Debug.Log("Player 2 Knight is in Walking State!");
     }
 
     public void StopMoveToPlayer()

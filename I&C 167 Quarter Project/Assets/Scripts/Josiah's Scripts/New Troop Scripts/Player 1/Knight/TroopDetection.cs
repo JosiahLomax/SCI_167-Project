@@ -17,24 +17,23 @@ public class TroopDetection : MonoBehaviour
     private float moveSpeed;
     [SerializeField]
     private GameObject enemyTroop;
+    [SerializeField]
+    private Animator knightAnimator;
    
 
     private bool canSeeTroop = false;
     private bool facingRight = true;
 
     public LayerMask enemyTroopLayerP2;
-
     public KnightState knightState;
 
     
-
-
-   
 
     // Start is called before the first frame update
     void Start()
     {
         troopRB = GetComponent<Rigidbody2D>();
+        knightAnimator = GetComponent<Animator>();
       
       
     }
@@ -58,44 +57,37 @@ public class TroopDetection : MonoBehaviour
 
         if (hitTroop.collider == true)
         {
+            Debug.Log("Player 2 Troop Detected!");
             canSeeTroop = true;
-            StartCoroutine(TroopDetected());
+            Invoke("MoveToTroop", 1);
             
         }
         else if(hitTroop.collider != true)
         {
+            Debug.Log("Player 2 Troop Not Detected!");
             canSeeTroop = false;
-            Debug.Log("Troop Not Detected!");
-            StopMoveToTroop();
         }
       
     }
 
-    
-    IEnumerator TroopDetected()
-    {
-        if (canSeeTroop == true)
-        {
-            Debug.Log("Player 2 Troop Detected!");
-            yield return new WaitForSeconds(1);
-            knightState = KnightState.Walking;
-            MoveToTroop();
-            Debug.Log("Knight is in the Walking State!");
-            
-        }
-    }
-    
+  
     
     public void MoveToTroop()
     {
-        if (transform.position.x < enemyTroop.transform.position.x)
+        knightState = KnightState.Walking;
+        if (canSeeTroop == true)
         {
-            troopRB.velocity = new Vector2(moveSpeed, 0);
+
+            if (transform.position.x < enemyTroop.transform.position.x)
+            {
+                troopRB.velocity = new Vector2(moveSpeed, 0);
+            }
+            else if (transform.position.x > enemyTroop.transform.position.x)
+            {
+                troopRB.velocity = new Vector2(-moveSpeed, 0);
+            }
         }
-        else if (transform.position.x > enemyTroop.transform.position.x)
-        {
-            troopRB.velocity = new Vector2(-moveSpeed, 0);
-        }
+        Debug.Log("Player 1 Knight is in Walking State!");
     }
 
    public void StopMoveToTroop()
