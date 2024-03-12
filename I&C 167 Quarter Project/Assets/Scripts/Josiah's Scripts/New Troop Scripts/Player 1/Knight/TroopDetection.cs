@@ -75,6 +75,7 @@ public class TroopDetection : MonoBehaviour
     public void MoveToTroop()
     {
         knightState = KnightState.Walking;
+        knightAnimator.SetBool("isWalking", true);
         if (canSeeTroop == true)
         {
 
