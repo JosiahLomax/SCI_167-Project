@@ -22,7 +22,7 @@ public class DamageGiver : MonoBehaviour                                //Code w
         {
             Player player = collison.gameObject.GetComponent<Player>(); // Gets the Player component from the object collided with
             ApplyDamage(player);
-            //Destroy(this.parentPrefab);                                 //Once the parent prefab collides with the object tagged 'player' it will be destroyed
+            Destroy(this.parentPrefab);                                 //Once the parent prefab collides with the object tagged 'player' it will be destroyed
         }
     }
 }
