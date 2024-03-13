@@ -9,7 +9,7 @@ public class GameStateManager : MonoBehaviour
 {
     // makes it so we can grab it from anywhere
     public static GameStateManager Instance;
-    public static GameOverScript gameOverScript;
+    //public static GameOverScript gameOverScript;
 
 
     enum GAMESTATE
@@ -62,12 +62,12 @@ public class GameStateManager : MonoBehaviour
     }
 
 
-    public static void GameOverWin()
-    {
-        // will show game over scene
-        state = GAMESTATE.GAMEOVER;
-        gameOverScript.Showp1WinScreen();
-    }
+    //public static void GameOverWin()
+    //{
+    //    // will show game over scene
+    //    state = GAMESTATE.GAMEOVER;
+    //    gameOverScript.Showp1WinScreen();
+    //}
 
     public static void GameOver()
     {
