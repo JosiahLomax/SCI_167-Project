@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5070951733747919954
 Transform:
   m_ObjectHideFlags: 0
@@ -103,7 +103,6 @@ GameObject:
   - component: {fileID: 7947999913143286827}
   - component: {fileID: 6591291731173785014}
   - component: {fileID: 1353435614806809007}
-  - component: {fileID: 4424726716385130377}
   m_Layer: 8
   m_Name: hitBox
   m_TagString: Troop
@@ -184,20 +183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 32
-  parentPrefab: {fileID: 7223515366915071718}
---- !u!114 &4424726716385130377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566424709047199531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cae750633a904744680d1327ea7a2195, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Damage: 34
   parentPrefab: {fileID: 7223515366915071718}
 --- !u!1 &2699546916687728606
 GameObject:
@@ -440,7 +425,7 @@ Animator:
   m_GameObject: {fileID: 7223515366915071718}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 823d60c89425bc64cbff7286d175ac94, type: 2}
+  m_Controller: {fileID: 9100000, guid: 83c875f8dceeac944bdc5179bee86df4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -542,14 +527,10 @@ MonoBehaviour:
   enemyTroop: {fileID: 1871661248081759676, guid: ca52ab1ac6caf5e42bd5ddf69d74fb19, type: 3}
   knightState: 0
   troopDetection: {fileID: 7689000766197584989}
-  castleDetection: {fileID: 2619334489927329682}
   knightAnimator: {fileID: 688893375104393097}
   enemyTroopLayerP2:
     serializedVersion: 2
     m_Bits: 1024
-  enemyPlayer2Layer:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!1 &7542303164946522395
 GameObject:
   m_ObjectHideFlags: 0

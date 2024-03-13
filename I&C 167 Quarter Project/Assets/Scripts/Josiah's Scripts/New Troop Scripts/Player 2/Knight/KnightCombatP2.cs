@@ -17,6 +17,7 @@ public class KnightCombatP2 : MonoBehaviour
     private bool inRange = false;
 
     public KnightState knightState;
+    public Animator knightAnimator;
     public TroopDetectionP2 troopDetection;
 
     public LayerMask enemyTroopLayerP1;
@@ -57,7 +58,16 @@ public class KnightCombatP2 : MonoBehaviour
         {
             troopDetection.StopMoveToTroop();
             // Set Attack animation and Deal Damage!
+            knightAnimator.SetBool("isAttacking", true);
             Debug.Log("Player 2 Knight is in Swinging State!");
+        }
+    }
+
+    void StopAttack()
+    {
+        if (inRange == false)
+        {
+            knightAnimator.SetBool("isAttacking", false);
         }
     }
 }

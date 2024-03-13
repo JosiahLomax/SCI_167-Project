@@ -22,12 +22,9 @@ public class KnightCombat : MonoBehaviour
    
     public KnightState knightState;
     public TroopDetection troopDetection;
-    public CastleDetection castleDetection;
     public Animator knightAnimator;
-  
-
     public LayerMask enemyTroopLayerP2;
-    public LayerMask enemyPlayer2Layer;
+ 
 
 
 
@@ -43,8 +40,6 @@ public class KnightCombat : MonoBehaviour
     void Update()
     {
         CheckForTroop();
-        CheckForPlayer();
-        knightAnimator = GetComponent<Animator>();
     }
 
     void CheckForTroop()
@@ -60,37 +55,20 @@ public class KnightCombat : MonoBehaviour
         else if (hitTroop.collider == false)
         {
             inRange = false;
+            StopAttack();
         }
         
 
     }
 
-    void CheckForPlayer()
-    {
-        RaycastHit2D hitTroop = Physics2D.Raycast(CombatRayCast.transform.position, facingRight ? Vector2.right : Vector2.left, combatRange, enemyPlayer2Layer);
-
-        if (hitTroop.collider == true)
-        {
-            inRange = true;
-            Attack();
-
-        }
-        else if (hitTroop.collider == false)
-        {
-            inRange = false;
-            StopAttack();
-        }
-    }
+   
 
     void Attack()
     {
         if(inRange == true)
         {
             troopDetection.StopMoveToTroop();
-            castleDetection.StopMoveToPlayer();
             knightAnimator.SetBool("isAttacking", true);  // Sets Attack Animation! 
-           
-           
         }
         
     }
