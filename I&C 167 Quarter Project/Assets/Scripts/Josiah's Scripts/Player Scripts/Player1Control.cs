@@ -5,12 +5,7 @@ using UnityEngine;
 public class Player1Control : MonoBehaviour
 {
     [SerializeField]
-Josiah'sBranch3
     private GameObject troopSpawnPoint;                      
-
-
-    private GameObject troopSpawnPoint;
- main
     [SerializeField]
     private GameObject KnightToSpawn;                              // Knight Gameobject
     [SerializeField]
