@@ -38,7 +38,8 @@ public class Player : MonoBehaviour                                             
         if (m_CurrentHealth <= 0)                                     // If the player's current health is 0 or below, a string will appear in the debug log stating the castle has been sieged
         {
             Debug.Log("Castle Sieged!");
-            SceneManager.LoadScene(2);
+            GameStateManager.GameOver();
+            //SceneManager.LoadScene(4);
             //Player loses
         }
     }

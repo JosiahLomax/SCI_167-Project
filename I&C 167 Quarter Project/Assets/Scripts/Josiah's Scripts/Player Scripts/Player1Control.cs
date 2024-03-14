@@ -5,19 +5,18 @@ using UnityEngine;
 public class Player1Control : MonoBehaviour
 {
     [SerializeField]
-    private GameObject troopSpawnPoint;                             // The Point where the Troops will be Spawned
+Josiah'sBranch3
+    private GameObject troopSpawnPoint;                      
 
+
+    private GameObject troopSpawnPoint;
+ main
     [SerializeField]
     private GameObject KnightToSpawn;                              // Knight Gameobject
     [SerializeField]
     private GameObject ArcherToSpawn;                             // Archer Gameobject
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
