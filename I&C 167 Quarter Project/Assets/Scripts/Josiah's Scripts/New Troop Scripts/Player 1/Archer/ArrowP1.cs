@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 //Code Written by Josiah Lomax
-public class Arrow : MonoBehaviour
+public class ArrowP1 : MonoBehaviour
 {
     public Rigidbody2D arrowRb;
     public float speed = 2.5f;

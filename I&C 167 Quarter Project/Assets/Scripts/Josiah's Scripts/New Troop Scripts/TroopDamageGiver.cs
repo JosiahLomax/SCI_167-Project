@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// Code Written by Josiah Lomax
 public class TroopDamageGiver : MonoBehaviour
 {
 

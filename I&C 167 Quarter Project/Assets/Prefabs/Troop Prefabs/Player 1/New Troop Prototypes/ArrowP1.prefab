@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1516205527637566622}
   - component: {fileID: 2127465584366010725}
   m_Layer: 0
-  m_Name: Arrow
+  m_Name: ArrowP1
   m_TagString: Troop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,8 +174,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowRb: {fileID: 5224400727864910818}
-  speed: 2.5
-  range: 1
+  speed: 4
+  range: 1.5
 --- !u!114 &1516205527637566622
 MonoBehaviour:
   m_ObjectHideFlags: 0

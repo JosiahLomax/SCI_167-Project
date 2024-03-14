@@ -59,4 +59,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   troopSpawnPoint: {fileID: 1734665149638122}
-  troopToSpawn: {fileID: 1871661248081759676, guid: ca52ab1ac6caf5e42bd5ddf69d74fb19, type: 3}
+  knightToSpawn: {fileID: 1871661248081759676, guid: ca52ab1ac6caf5e42bd5ddf69d74fb19, type: 3}
+  archerToSpawn: {fileID: 7985154209454102416, guid: f7c456b4828e85944a047cacad2e8bb3, type: 3}

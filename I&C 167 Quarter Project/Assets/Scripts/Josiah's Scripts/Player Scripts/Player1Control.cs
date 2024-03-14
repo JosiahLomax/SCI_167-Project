@@ -5,25 +5,30 @@ using UnityEngine;
 public class Player1Control : MonoBehaviour
 {
     [SerializeField]
+Josiah'sBranch3
+    private GameObject troopSpawnPoint;                      
+
+
     private GameObject troopSpawnPoint;
+ main
     [SerializeField]
-    private GameObject KnightToSpawn;
+    private GameObject KnightToSpawn;                              // Knight Gameobject
     [SerializeField]
-    private GameObject ArcherToSpawn;
+    private GameObject ArcherToSpawn;                             // Archer Gameobject
 
 
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Instantiate(KnightToSpawn, troopSpawnPoint.transform.position, KnightToSpawn.transform.rotation);           // After clicking spacebar, the player will spawn in a troop prototype at the position of the troop spawner
+            Instantiate(KnightToSpawn, troopSpawnPoint.transform.position, KnightToSpawn.transform.rotation);           // Pressing 1 on the Keyboard Spawns in Knight
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Instantiate(ArcherToSpawn, troopSpawnPoint.transform.position, ArcherToSpawn.transform.rotation);
+            Instantiate(ArcherToSpawn, troopSpawnPoint.transform.position, ArcherToSpawn.transform.rotation);          // Pressing 2 on the Keyoard Spawns in Archer 
         }
     }
 }
