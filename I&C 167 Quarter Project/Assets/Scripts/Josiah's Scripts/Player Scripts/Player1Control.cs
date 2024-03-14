@@ -6,18 +6,12 @@ public class Player1Control : MonoBehaviour
 {
     [SerializeField]
     private GameObject troopSpawnPoint;
-
     [SerializeField]
     private GameObject KnightToSpawn;
     [SerializeField]
     private GameObject ArcherToSpawn;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
