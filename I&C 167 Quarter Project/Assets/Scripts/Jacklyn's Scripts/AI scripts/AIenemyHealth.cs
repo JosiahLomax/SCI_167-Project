@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIenemyHealth : MonoBehaviour
+public class AIenemyHealth : MonoBehaviour // made by jacklyn
 {
     [SerializeField]
     public int health;

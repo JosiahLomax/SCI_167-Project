@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class P1bow : MonoBehaviour
+public class P1bow : MonoBehaviour // made by jacklyn
 {
     [SerializeField]
     private GameObject P1arrowPrefab;

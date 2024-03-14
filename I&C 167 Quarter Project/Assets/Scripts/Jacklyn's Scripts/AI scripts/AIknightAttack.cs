@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // child class of AIEnemy 
-public class AIknightAttack : MonoBehaviour
+public class AIknightAttack : MonoBehaviour // made by jacklyn
 {
 
     [SerializeField]
