@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class P1arrow : MonoBehaviour
+public class P1arrow : MonoBehaviour // made by jacklyn
 {
     [SerializeField]
     private Rigidbody2D p1ArrowRb;

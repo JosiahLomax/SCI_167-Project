@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TowerHealthP1 : MonoBehaviour
+public class TowerHealthP1 : MonoBehaviour //made by Jacklyn
 {
     [SerializeField]
     public int health;

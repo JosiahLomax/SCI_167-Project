@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIstateMachine : MonoBehaviour
+public class AIstateMachine : MonoBehaviour //made by jacklyn
 {
     [SerializeField]
     private KnightState knightState;
@@ -13,10 +13,12 @@ public class AIstateMachine : MonoBehaviour
     [SerializeField]
     private LayerMask enemyLayer;
 
+    
+
     void Start()
     {
         knightState = KnightState.Walking;
-        //archerState = ArcherState.Walking;
+        archerState = ArcherState.Walking;
     }
     void Update()
     {
@@ -29,10 +31,6 @@ public class AIstateMachine : MonoBehaviour
             }
         }
 
-        //if (knightState == KnightState.Attacking)
-        //{
-
-        //}
     }
 
     public enum KnightState
@@ -47,5 +45,26 @@ public class AIstateMachine : MonoBehaviour
         Idle,
         Walking,
         Shooting
+    };
+
+    public enum ShielderState
+    {
+        Idle,
+        Walking,
+        Attacking
+    };
+
+    public enum MageState
+    {
+        Idle,
+        Walking,
+        Shooting
+    };
+
+    public enum GoblinState
+    {
+        Idle,
+        Walking,
+        Attacking
     };
 }
