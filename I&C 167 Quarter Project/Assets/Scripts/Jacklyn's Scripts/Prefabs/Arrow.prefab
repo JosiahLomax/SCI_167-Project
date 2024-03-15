@@ -173,3 +173,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p1ArrowRb: {fileID: 916681325134636377}
   speed: 2.5
+  range: 1
+  timer: 0
+  damage: 10
