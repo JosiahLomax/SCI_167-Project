@@ -742,7 +742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bca15b886b173468467a001257912d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  P1arrowPrefab: {fileID: 6327853549593149243, guid: e0c86407f8c21b64d85a16ffaae3469b, type: 3}
+  P1arrowPrefab: {fileID: 6327853549593149243, guid: d04c254f40004d94695e6b4ca71db78a, type: 3}
   coolDown: 2.5
   timer: 0
 --- !u!212 &452216685
@@ -3743,7 +3743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bca15b886b173468467a001257912d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  P1arrowPrefab: {fileID: 6327853549593149243, guid: e0c86407f8c21b64d85a16ffaae3469b, type: 3}
+  P1arrowPrefab: {fileID: 6327853549593149243, guid: d04c254f40004d94695e6b4ca71db78a, type: 3}
   coolDown: 2.5
   timer: 0
 --- !u!212 &1677605105
