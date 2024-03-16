@@ -6,19 +6,19 @@ using UnityEngine;
 public class ArcherCombatP1 : MonoBehaviour
 {
     [SerializeField]
-    private Transform CombatRayCast;
+    private Transform CombatRayCast;                                // This is a raycast object on the Archer prefab itself
 
     [SerializeField]
-    private float bowRange;
+    private float bowRange;                                        // The range before the bow script is called
     [SerializeField]
     private GameObject enemyTroop;
 
     private bool facingRight = true;
     private bool inRange = false;
 
-    public ArcherTroopDetection archerTroopDetection;
-    public Bow bowScript;
-    public LayerMask enemyTroopLayerP2;
+    public ArcherTroopDetection archerTroopDetection;              // Reference to the ArcherTroopDetection Script
+    public Bow bowScript;                                          // Reference to the Bow script
+    public LayerMask enemyTroopLayerP2;                            // enemyTroopLayerP2 is the layer that all player 2 troops should be under
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +34,7 @@ public class ArcherCombatP1 : MonoBehaviour
 
     void CheckForTroop()
     {
-        RaycastHit2D hitTroop = Physics2D.Raycast(CombatRayCast.transform.position, facingRight ? Vector2.right : Vector2.left, bowRange, enemyTroopLayerP2);
+        RaycastHit2D hitTroop = Physics2D.Raycast(CombatRayCast.transform.position, facingRight ? Vector2.right : Vector2.left, bowRange, enemyTroopLayerP2);               // Creates a raycast at the point where the combat raycast is, and is the lenght of the bow range. It looks for anything on the enemyTroopLayerP2
 
         if(hitTroop.collider == true)
         {
@@ -52,8 +52,8 @@ public class ArcherCombatP1 : MonoBehaviour
     {
         if(inRange == true)
         {
-            archerTroopDetection.StopMoveToTroop();
-            bowScript.enabled = true;
+            archerTroopDetection.StopMoveToTroop();                     // Goes into the archerTroopDetection script, and calls the function that stops the Archer's movement to an enemy troop
+            bowScript.enabled = true;                                  // Enables the bow script on the Archer prefab, which acts as the shooting of an arrow
         }
     }
 
@@ -61,7 +61,7 @@ public class ArcherCombatP1 : MonoBehaviour
     {
         if(inRange == false)
         {
-            bowScript.enabled = false;
+            bowScript.enabled = false;                              // Disables the bow script on the Archer prefab, meaning it should no longer be shooting arrows
         }
     }
         
