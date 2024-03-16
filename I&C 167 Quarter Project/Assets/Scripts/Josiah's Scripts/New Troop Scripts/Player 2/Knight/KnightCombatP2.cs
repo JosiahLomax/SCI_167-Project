@@ -6,9 +6,9 @@ using UnityEngine;
 public class KnightCombatP2 : MonoBehaviour
 {
     [SerializeField]
-    private Transform CombatRayCast;
+    private Transform CombatRayCast;                     // References the CombatRayCast on the Player 2 Knight prefab
     [SerializeField]
-    private float combatRange;
+    private float combatRange;                           // The range that the Player 2 Knight will begin attacking in
     [SerializeField]
     private GameObject enemyTroop;
 
@@ -16,11 +16,11 @@ public class KnightCombatP2 : MonoBehaviour
     private bool facingLeft = true;
     private bool inRange = false;
 
-    public KnightState knightState;
+    public KnightState knightState;                      // References the Knight State Machine script on the Knight prefab
     public Animator knightAnimator;
-    public TroopDetectionP2 troopDetection;
+    public TroopDetectionP2 troopDetection;             // References the TroopDetectionP2 script on the Player 2 Knight prefab
 
-    public LayerMask enemyTroopLayerP1;
+    public LayerMask enemyTroopLayerP1;                 // enemyTroopLayerP1 is the layer that all player 1 troops should be under
 
 
     // Start is called before the first frame update
@@ -37,7 +37,7 @@ public class KnightCombatP2 : MonoBehaviour
 
     void CheckForTroop()
     {
-        RaycastHit2D hitTroop = Physics2D.Raycast(CombatRayCast.transform.position, facingLeft ? Vector2.left : Vector2.right, combatRange, enemyTroopLayerP1);
+        RaycastHit2D hitTroop = Physics2D.Raycast(CombatRayCast.transform.position, facingLeft ? Vector2.left : Vector2.right, combatRange, enemyTroopLayerP1);      // Creates a raycast at the point of the CombatRaycast object on the Player 2 Knight prefab, with the length of the combat range. It looks for anything on the enemyTroopLayerP1 layer
 
         if (hitTroop.collider == true)
         {
@@ -56,8 +56,8 @@ public class KnightCombatP2 : MonoBehaviour
     {
         if (inRange == true)
         {
-            troopDetection.StopMoveToTroop();
-            // Set Attack animation and Deal Damage!
+            troopDetection.StopMoveToTroop();                // Goes into the TroopDetectionP2 script, and calls the StopMoveToTroop function. 
+            // Sets Attack animation 
             knightAnimator.SetBool("isAttacking", true);
             Debug.Log("Player 2 Knight is in Swinging State!");
         }
@@ -67,7 +67,7 @@ public class KnightCombatP2 : MonoBehaviour
     {
         if (inRange == false)
         {
-            knightAnimator.SetBool("isAttacking", false);
+            knightAnimator.SetBool("isAttacking", false);   // Stops the Attack Animation!
         }
     }
 }

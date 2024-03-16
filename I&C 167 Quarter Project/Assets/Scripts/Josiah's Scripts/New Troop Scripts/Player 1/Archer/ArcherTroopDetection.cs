@@ -42,7 +42,7 @@ public class ArcherTroopDetection : MonoBehaviour
 
     void CheckForTroop()
     {
-        RaycastHit2D hitTroop = Physics2D.Raycast(rayCast.transform.position, facingRight ? Vector2.right : Vector2.left, agroRange, enemyTroopLayerP2);        // Creates a raycast at the point of the raycast object on the prefab, with the length of the agro range. It looks for anything on the enemyTroopLayerP2 layer
+        RaycastHit2D hitTroop = Physics2D.Raycast(rayCast.transform.position, facingRight ? Vector2.right : Vector2.left, agroRange, enemyTroopLayerP2);        // Creates a raycast at the point of the raycast object on the Player 1 Archer prefab, with the length of the agro range. It looks for anything on the enemyTroopLayerP2 layer
        
 
         if(hitTroop.collider == true)           // If the raycast successfully hits anything on the enemyTroopLayerP2, it performs the following functions

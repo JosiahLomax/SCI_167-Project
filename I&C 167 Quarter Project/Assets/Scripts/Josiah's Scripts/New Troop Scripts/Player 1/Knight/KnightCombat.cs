@@ -8,7 +8,7 @@ public class KnightCombat : MonoBehaviour
 
 
     [SerializeField]
-    private Transform CombatRayCast;                    // References the CombatRayCast on the Knight prefab
+    private Transform CombatRayCast;                    // References the CombatRayCast on the Player 1 Knight prefab
 
     [SerializeField]
     private float combatRange;                          // The range that the Player 1 Knight will begin attacking in
@@ -20,7 +20,7 @@ public class KnightCombat : MonoBehaviour
     private bool inRange = false;
 
    
-    public KnightState knightState;                      // References the P1Knight State Machine script on the Knight prefab
+    public KnightState knightState;                      // References the Knight State Machine script on the Knight prefab
     public TroopDetection troopDetection;               // References the TroopDetection script on the Knight prefab
     public Animator knightAnimator;
     public LayerMask enemyTroopLayerP2;                 // enemyTroopLayerP2 is the layer that all player 2 troops should be under
