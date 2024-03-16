@@ -65,18 +65,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.028724432, y: -0.017192185}
+  m_Offset: {x: -0.16033597, y: -0.08103198}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1615872, y: 0.18682097}
+  m_Size: {x: 0.30956838, y: 0.5367551}
   m_EdgeRadius: 0
 --- !u!114 &873254891065056804
 MonoBehaviour:
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 8593674323610315472}
   - component: {fileID: 8624996932871727858}
   - component: {fileID: 391377621836349192}
-  - component: {fileID: 8965272010049871521}
+  - component: {fileID: 3648135660173098012}
   - component: {fileID: 169607463593718458}
   - component: {fileID: 937468671062886984}
   - component: {fileID: 1000503982129136951}
@@ -316,7 +316,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: -1.34, y: 0.96, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1235216151655981398}
@@ -358,7 +358,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.028724432, y: -0.018220492}
+  m_Offset: {x: -0.16033597, y: -0.08103198}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -369,7 +369,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16158724, y: 0.1855159}
+  m_Size: {x: 0.30956838, y: 0.5367551}
   m_EdgeRadius: 0
 --- !u!50 &391377621836349192
 Rigidbody2D:
@@ -398,16 +398,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8965272010049871521
+--- !u!114 &3648135660173098012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7985154209454102416}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c8b635a0f8ee9a47a823f1816820f00, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d84582d84b07844aa54d602148a9ba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   knightRB: {fileID: 391377621836349192}
@@ -415,9 +415,8 @@ MonoBehaviour:
   agroRange: 14
   moveSpeed: 2
   enemyCastle: {fileID: 2074704079011182836, guid: 9fe511d0583a5324dab8824bd32d1c9e, type: 3}
-  knightAnimator: {fileID: 0}
   knightState: 0
-  enemyPlayer2Layer:
+  enemyPlayer1Layer:
     serializedVersion: 2
     m_Bits: 128
 --- !u!114 &169607463593718458
