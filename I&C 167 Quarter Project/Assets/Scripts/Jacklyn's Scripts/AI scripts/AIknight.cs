@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // PARENT CLASS FOR AI ENEMY
-public class AIEnemy : MonoBehaviour   // coded by Jacklyn
+public class AIknight : MonoBehaviour   // coded by Jacklyn
 {
     [SerializeField]
     private Rigidbody2D knightRb;

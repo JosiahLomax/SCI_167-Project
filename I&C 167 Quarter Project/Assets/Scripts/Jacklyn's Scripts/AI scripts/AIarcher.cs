@@ -2,18 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// child class of AIEnemy
-//public class AIarcher : AIstateMachine
-//{
-//    private void Update()
-//    {
-//        if (archerState == ArcherState.Walking)
-//        {
-//            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, detectionRange, enemyLayer);
-//            if (hit.collider != null) //if raycast finds enemy layer (not null/empty), change states
-//            {
-//                archerState = ArcherState.Shooting;
-//            }
-//        }
-//    }
-//}
+public class AIarcher : MonoBehaviour
+{
+    [SerializeField]
+    private float speed;
+
+    [SerializeField]
+    private Rigidbody2D AIarcherRb;
+
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        AIarcherRb.velocity = Vector2.right * speed;
+    }
+}
+
