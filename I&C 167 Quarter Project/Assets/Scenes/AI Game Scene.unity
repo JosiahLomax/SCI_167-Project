@@ -3845,6 +3845,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7f84acca9d9994fbcd5ef58951d2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AIarrowPrefab: {fileID: 6327853549593149243, guid: b1c50567a9700124db2000453e241a2e, type: 3}
+  coolDown: 2.5
+  timer: 0
 --- !u!1001 &477050046573008934
 PrefabInstance:
   m_ObjectHideFlags: 0
