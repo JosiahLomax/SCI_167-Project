@@ -42,7 +42,7 @@ public class CastleDetection : MonoBehaviour
     // Code that Checks for the Enemy's Castle
     void CheckForPlayer()
     {
-        RaycastHit2D hitPlayer = Physics2D.Raycast(rayCast.transform.position, facingRight ? Vector2.right : Vector2.left, agroRange, enemyPlayer2Layer);           // Creates a raycast at the point of the raycast object on the troop prefab, with the length of the agro range. It looks for anything on the enemyPlayer2Layer
+        RaycastHit2D hitPlayer = Physics2D.Raycast(rayCast.transform.position, facingRight ? Vector2.right : Vector2.left, agroRange, enemyPlayer2Layer);           // Creates a raycast at the point of the raycast object on the Player 1troop prefab, with the length of the agro range. It looks for anything on the enemyPlayer2Layer
 
         if (hitPlayer.collider == true)                                     // If the raycast successfully hits anything on the enemyPlayer2Layer, it performs the following functions
         {

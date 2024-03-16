@@ -34,7 +34,7 @@ public class ArcherCombatP1 : MonoBehaviour
 
     void CheckForTroop()
     {
-        RaycastHit2D hitTroop = Physics2D.Raycast(CombatRayCast.transform.position, facingRight ? Vector2.right : Vector2.left, bowRange, enemyTroopLayerP2);               // Creates a raycast at the point where the combat raycast is, and is the lenght of the bow range. It looks for anything on the enemyTroopLayerP2
+        RaycastHit2D hitTroop = Physics2D.Raycast(CombatRayCast.transform.position, facingRight ? Vector2.right : Vector2.left, bowRange, enemyTroopLayerP2);               // Creates a raycast at the point where the combat raycast is, and is the length of the bow range. It looks for anything on the enemyTroopLayerP2
 
         if(hitTroop.collider == true)
         {
