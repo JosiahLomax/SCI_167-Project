@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &87419183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -707,7 +707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 486814118}
   - component: {fileID: 486814120}
-  - component: {fileID: 486814119}
+  - component: {fileID: 486814121}
   m_Layer: 0
   m_Name: Mage Staff
   m_TagString: Untagged
@@ -730,21 +730,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1936373110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &486814119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486814117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7f84acca9d9994fbcd5ef58951d2ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AIarrowPrefab: {fileID: 6327853549593149243, guid: b1c50567a9700124db2000453e241a2e, type: 3}
-  coolDown: 2.5
-  timer: 0
 --- !u!212 &486814120
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -786,7 +771,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 37ae404f96675d340af33ce1e6927e61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6aad4f7c4b0744133882fa9e7b137dcf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -797,6 +782,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &486814121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486814117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70784f71d4e92404cb90c249e9263c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AIballPrefab: {fileID: 2911685405908936694, guid: 969470a6de854443c8a5d652c2c00b31, type: 3}
+  coolDown: 2.5
+  timer: 0
 --- !u!1 &633133149
 GameObject:
   m_ObjectHideFlags: 0
@@ -3592,7 +3592,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: feb32809a79dc9d49929218dea08b0cc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13cc68b792d4346408a7d31302b3799f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -3615,7 +3615,7 @@ GameObject:
   - component: {fileID: 1936373109}
   - component: {fileID: 1936373108}
   - component: {fileID: 1936373107}
-  - component: {fileID: 1936373106}
+  - component: {fileID: 1936373111}
   m_Layer: 0
   m_Name: AI Mage
   m_TagString: Untagged
@@ -3623,20 +3623,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1936373106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936373105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d68c7cf3aaabd9f40b344b059b102f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  AIarcherRb: {fileID: 1936373108}
 --- !u!61 &1936373107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3669,7 +3655,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1776246, y: -0.08379328}
+  m_Offset: {x: 0.1310444, y: -0.18326381}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3680,7 +3666,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2539437, y: 0.601419}
+  m_Size: {x: 0.37815765, y: 0.601419}
   m_EdgeRadius: 0
 --- !u!50 &1936373108
 Rigidbody2D:
@@ -3750,7 +3736,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: feb32809a79dc9d49929218dea08b0cc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13cc68b792d4346408a7d31302b3799f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -3770,7 +3756,7 @@ Transform:
   m_GameObject: {fileID: 1936373105}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.8, y: 1.07, z: 0}
+  m_LocalPosition: {x: 2.87, y: 1.18, z: 0}
   m_LocalScale: {x: 1.4784, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3778,6 +3764,20 @@ Transform:
   - {fileID: 486814118}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1936373111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936373105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6644ad097d6b04637912ff1dc9d0676b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  AImageRb: {fileID: 1936373108}
 --- !u!1001 &1942174805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3927,8 +3927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a097072acae46c42bd0b536e6ce0c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knightRb: {fileID: 1942174807}
-  movementSpeed: 1
 --- !u!114 &1942174817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3941,6 +3939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e0d7f1dc9847c0439c57ed6b5020c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knightRb: {fileID: 1942174807}
+  movementSpeed: 0
 --- !u!114 &1942174825
 MonoBehaviour:
   m_ObjectHideFlags: 0
