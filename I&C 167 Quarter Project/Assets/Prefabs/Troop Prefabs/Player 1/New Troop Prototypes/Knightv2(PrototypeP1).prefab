@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae750633a904744680d1327ea7a2195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Damage: 100
+  m_Damage: 3
   parentPrefab: {fileID: 7223515366915071718}
 --- !u!61 &5109664214662120930
 BoxCollider2D:
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f36dca74e224b43bea5ef8603d1f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 32
+  Damage: 3
   parentPrefab: {fileID: 7223515366915071718}
 --- !u!1 &2699546916687728606
 GameObject:
@@ -451,7 +451,7 @@ MonoBehaviour:
   knightRB: {fileID: 2055117128125900335}
   rayCast: {fileID: 4265736211776401560}
   agroRange: 12
-  moveSpeed: 2
+  moveSpeed: 3
   enemyCastle: {fileID: 7666653321607759911, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
   knightAnimator: {fileID: 688893375104393097}
   knightState: 0
@@ -473,7 +473,7 @@ MonoBehaviour:
   troopRB: {fileID: 2055117128125900335}
   rayCast: {fileID: 4265736211776401560}
   agroRange: 12
-  moveSpeed: 2
+  moveSpeed: 3
   enemyTroop: {fileID: 1871661248081759676, guid: ca52ab1ac6caf5e42bd5ddf69d74fb19, type: 3}
   knightAnimator: {fileID: 688893375104393097}
   enemyTroopLayerP2:
@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536b8272e530eb6488e5b70c0435358f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingHealth: 100
+  StartingHealth: 6
   CurrentHealth: 0
 --- !u!114 &8470548357878338501
 MonoBehaviour:
