@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIarcher : MonoBehaviour
+public class AImage : MonoBehaviour
 {
     [SerializeField]
     private float speed;
 
     [SerializeField]
-    private Rigidbody2D AIarcherRb;
+    private Rigidbody2D AImageRb;
 
     void Start()
     {
@@ -18,7 +18,6 @@ public class AIarcher : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        AIarcherRb.velocity = Vector2.left * speed;
+        AImageRb.velocity = Vector2.left * speed;
     }
 }
-
