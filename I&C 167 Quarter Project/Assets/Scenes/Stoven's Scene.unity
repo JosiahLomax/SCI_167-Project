@@ -670,7 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddd4a77b390c8649b2a5d8fcda187fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Shielder - 10 hp, 2 atk, 1 speed, takes up 3 spots
+  tooltipText: 
 --- !u!50 &161492834
 Rigidbody2D:
   serializedVersion: 4
@@ -998,7 +998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddd4a77b390c8649b2a5d8fcda187fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Knight - 6 hp, 3 atk, 3 speed, takes up 1 spot
+  tooltipText: 
 --- !u!61 &328762798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1358,7 +1358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &460350526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1429,7 +1429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 671a643d400be304f88fb9b8f0f383cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 0}
+  tooltipPrefab: {fileID: 0}
 --- !u!1 &503182362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,7 +1566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddd4a77b390c8649b2a5d8fcda187fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Archer - 4 hp, 4 atk, 3 speed, takes up 1 spot
+  tooltipText: 
 --- !u!61 &503182368
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1775,7 +1775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddd4a77b390c8649b2a5d8fcda187fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Goblin - 3 hp, 4 atk, 5 speed, takes up 1 spot
+  tooltipText: 
 --- !u!61 &533419805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2336,7 +2336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddd4a77b390c8649b2a5d8fcda187fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Knight - 6 hp, 3 atk, 3 speed, takes up 1 spot
+  tooltipText: 
 --- !u!50 &844389517
 Rigidbody2D:
   serializedVersion: 4
@@ -2832,7 +2832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddd4a77b390c8649b2a5d8fcda187fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Shielder - 10 hp, 2 atk, 1 speed, takes up 3 spots
+  tooltipText: 
 --- !u!61 &1090204665
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3316,7 +3316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddd4a77b390c8649b2a5d8fcda187fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Archer - 4 hp, 4 atk, 3 speed, takes up 1 spot
+  tooltipText: 
 --- !u!50 &1210658437
 Rigidbody2D:
   serializedVersion: 4
@@ -3609,7 +3609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddd4a77b390c8649b2a5d8fcda187fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Goblin - 3 hp, 4 atk, 5 speed, takes up 1 spot
+  tooltipText: 
 --- !u!50 &1449064064
 Rigidbody2D:
   serializedVersion: 4
@@ -4489,7 +4489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddd4a77b390c8649b2a5d8fcda187fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Mage - 3 hp, 5 atk, 2 speed, takes up 2 spots
+  tooltipText: 
 --- !u!61 &2024554959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4698,7 +4698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddd4a77b390c8649b2a5d8fcda187fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Mage - 3 hp, 5 atk, 2 speed, takes up 2 spots
+  tooltipText: 
 --- !u!50 &2067732132
 Rigidbody2D:
   serializedVersion: 4
