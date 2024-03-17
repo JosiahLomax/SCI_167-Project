@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIarcher : MonoBehaviour
+public class AIarcher : MonoBehaviour // made by jacklyn
 {
     [SerializeField]
     private float speed;

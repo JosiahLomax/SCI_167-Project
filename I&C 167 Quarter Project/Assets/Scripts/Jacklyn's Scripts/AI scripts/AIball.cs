@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIball : MonoBehaviour
+public class AIball : MonoBehaviour //made by jacklyn
 {
     [SerializeField]
     private Rigidbody2D AIballRb;

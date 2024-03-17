@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class P1staff : MonoBehaviour
+public class P1staff : MonoBehaviour // made by jacklyn
 {
     [SerializeField]
     private GameObject P1ballPrefab;
