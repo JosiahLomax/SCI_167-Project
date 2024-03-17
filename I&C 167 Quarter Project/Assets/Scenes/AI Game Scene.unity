@@ -4299,7 +4299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knightRb: {fileID: 1942174807}
-  movementSpeed: 0
+  movementSpeed: 1
 --- !u!114 &1942174825
 MonoBehaviour:
   m_ObjectHideFlags: 0
