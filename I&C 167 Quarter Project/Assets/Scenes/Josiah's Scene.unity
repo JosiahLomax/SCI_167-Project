@@ -956,6 +956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight(PrototypeP1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1792567730890473246, guid: efb8a8a58b22269459445f5c152fff64, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4811933385562261106, guid: efb8a8a58b22269459445f5c152fff64, type: 3}
       propertyPath: m_Damage
       value: 100
