@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ToolTip : MonoBehaviour
+public class ButtonTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public string message;
+    public string tooltipText;
 
-    private void OnMouseEnter()
+    private TooltipManager tooltipManager;
+
+    private void Start()
     {
-        ToolTipManager._instance.SetAndShowToolTip(message);
+        tooltipManager = FindObjectOfType<TooltipManager>();
     }
 
-    private void OnMouseExit()
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        ToolTipManager._instance.HideToolTip();
+        Vector2 tooltipPosition = new Vector2(transform.position.x, transform.position.y + 50f);
+        tooltipManager.ShowTooltip(tooltipText, tooltipPosition);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        tooltipManager.HideTooltip();
     }
 }

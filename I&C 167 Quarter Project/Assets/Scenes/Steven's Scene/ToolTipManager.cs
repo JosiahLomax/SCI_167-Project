@@ -1,48 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ToolTipManager : MonoBehaviour
+public class TooltipManager : MonoBehaviour
 {
-    public static ToolTipManager _instance;
+    public GameObject tooltipPrefab;
 
-    public TextMeshProUGUI textComponent;
+    private GameObject currentTooltip;
 
-    private void Awake()
+    private void Start()
     {
-        if (_instance != null && _instance != this)
+        if (tooltipPrefab == null)
         {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            _instance = this;
+            Debug.LogError("Tooltip prefab is not assigned in the TooltipManager.");
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void ShowTooltip(string text, Vector2 position)
     {
-        Cursor.visible = true;
-        gameObject.SetActive(false);
+        if (tooltipPrefab == null)
+        {
+            Debug.LogError("Tooltip prefab is not assigned in the TooltipManager.");
+            return;
+        }
+
+        if (currentTooltip != null)
+        {
+            Destroy(currentTooltip);
+        }
+
+        currentTooltip = Instantiate(tooltipPrefab, position, Quaternion.identity, transform);
+        currentTooltip.GetComponentInChildren<TextMeshProUGUI>().text = text;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void HideTooltip()
     {
-        transform.position = Input.mousePosition;
-    }
-
-    public void SetAndShowToolTip(string message)
-    {
-        gameObject.SetActive(true);
-        textComponent.text = message;
-    }
-
-    public void HideToolTip()
-    {
-        gameObject.SetActive(false);
-        textComponent.text = string.Empty;
+        if (currentTooltip != null)
+        {
+            Destroy(currentTooltip);
+        }
     }
 }
