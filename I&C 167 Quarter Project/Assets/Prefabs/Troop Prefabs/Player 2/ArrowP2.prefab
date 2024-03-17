@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f36dca74e224b43bea5ef8603d1f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 10
+  Damage: 4
   parentPrefab: {fileID: 5936836238174832337}
 --- !u!114 &1955355412441508623
 MonoBehaviour:
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae750633a904744680d1327ea7a2195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Damage: 10
+  m_Damage: 4
   parentPrefab: {fileID: 5936836238174832337}
 --- !u!114 &8464901558585045503
 MonoBehaviour:

@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536b8272e530eb6488e5b70c0435358f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingHealth: 100
+  StartingHealth: 6
   CurrentHealth: 100
 --- !u!114 &2215739072200175350
 MonoBehaviour:
@@ -164,7 +164,7 @@ MonoBehaviour:
   knightRB: {fileID: 9029721179897490487}
   rayCast: {fileID: 3272569511516805044}
   agroRange: 14
-  moveSpeed: 2
+  moveSpeed: 3
   enemyCastle: {fileID: 2074704079011182836, guid: 9fe511d0583a5324dab8824bd32d1c9e, type: 3}
   knightState: 0
   enemyPlayer1Layer:
@@ -185,7 +185,7 @@ MonoBehaviour:
   troopRB: {fileID: 9029721179897490487}
   rayCast: {fileID: 3272569511516805044}
   agroRange: 14
-  moveSpeed: 2
+  moveSpeed: 3
   enemyTroop: {fileID: 7223515366915071718, guid: 7cccfd00f1202db43b8cc6ae54ec637f, type: 3}
   enemyTroopLayerP1:
     serializedVersion: 2
@@ -243,7 +243,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7303061717253837115}
   - component: {fileID: 5642422343310147147}
-  - component: {fileID: 7945632236079285744}
   - component: {fileID: 2884317436827913744}
   m_Layer: 10
   m_Name: DamageGiver
@@ -279,21 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae750633a904744680d1327ea7a2195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Damage: 34
-  parentPrefab: {fileID: 1871661248081759676}
---- !u!114 &7945632236079285744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982162085871589993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74f36dca74e224b43bea5ef8603d1f2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 10
+  m_Damage: 3
   parentPrefab: {fileID: 1871661248081759676}
 --- !u!61 &2884317436827913744
 BoxCollider2D:
@@ -430,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f36dca74e224b43bea5ef8603d1f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 32
+  Damage: 3
   parentPrefab: {fileID: 1871661248081759676}
 --- !u!1 &3625164044422105935
 GameObject:

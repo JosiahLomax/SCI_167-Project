@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae750633a904744680d1327ea7a2195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Damage: 10
+  m_Damage: 4
   parentPrefab: {fileID: 7855352803409113488}
 --- !u!1 &5944736896559230250
 GameObject:
@@ -382,7 +382,7 @@ MonoBehaviour:
   knightRB: {fileID: 1879372460743555975}
   rayCast: {fileID: 2925136250413999779}
   agroRange: 14
-  moveSpeed: 2
+  moveSpeed: 3
   enemyCastle: {fileID: 7666653321607759911, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
   knightAnimator: {fileID: 0}
   knightState: 0
@@ -404,7 +404,7 @@ MonoBehaviour:
   troopRB: {fileID: 1879372460743555975}
   rayCast: {fileID: 2925136250413999779}
   agroRange: 14
-  moveSpeed: 2
+  moveSpeed: 3
   enemyTroop: {fileID: 1871661248081759676, guid: ca52ab1ac6caf5e42bd5ddf69d74fb19, type: 3}
   enemyTroopLayerP2:
     serializedVersion: 2
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536b8272e530eb6488e5b70c0435358f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingHealth: 50
+  StartingHealth: 4
   CurrentHealth: 0
 --- !u!1 &8036126158084982388
 GameObject:

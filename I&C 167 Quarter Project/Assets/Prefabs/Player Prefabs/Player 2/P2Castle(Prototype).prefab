@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c36fdf28f2ef647ab5d69fed854210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StartingHealth: 100
+  m_StartingHealth: 15
   m_CurrentHealth: 0
   slider: {fileID: 0}
 --- !u!61 &6752814729153573113
@@ -362,4 +362,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   troopSpawnPoint: {fileID: 0}
-  troopToSpawn: {fileID: 1871661248081759676, guid: ca52ab1ac6caf5e42bd5ddf69d74fb19, type: 3}
+  knightToSpawn: {fileID: 0}
+  archerToSpawn: {fileID: 0}
