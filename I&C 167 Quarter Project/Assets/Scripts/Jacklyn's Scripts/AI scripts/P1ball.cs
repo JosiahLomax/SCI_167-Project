@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class P1ball : MonoBehaviour
+public class P1ball : MonoBehaviour //made by jacklyn
 {
     [SerializeField]
     private Rigidbody2D P1ballRb;

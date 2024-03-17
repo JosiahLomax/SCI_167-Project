@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AImage : MonoBehaviour
+public class AImage : MonoBehaviour //made by jacklyn
 {
     [SerializeField]
     private float speed;

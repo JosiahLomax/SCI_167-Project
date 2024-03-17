@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIstaff : MonoBehaviour
+public class AIstaff : MonoBehaviour //made by jacklyn
 {
     [SerializeField]
     private GameObject AIballPrefab;
