@@ -24,10 +24,10 @@ public class NumberKeyButtons : MonoBehaviour
     void ButtonClicked(int index)
     {
         Debug.Log($"Button {index + 1} clicked!");
-        
+
         HighlightButton(index);
         Invoke(nameof(ResetButtonColor), pressDuration); // Use pressDuration for both mouse clicks and key presses
-        
+
         ColorBlock colors = buttons[index].colors;
         colors.normalColor = colors.pressedColor;
         buttons[index].colors = colors;
@@ -81,25 +81,12 @@ public class NumberKeyButtons : MonoBehaviour
     {
         for (int i = 0; i < 10; i++)
         {
-            int keyNumber = i == 9 ? 0 : i + 1; // Convert i to key number (0-9)
-            KeyCode keyCode = (KeyCode)System.Enum.Parse(typeof(KeyCode), "Alpha" + keyNumber); // Calculate the corresponding KeyCode
+            KeyCode keyCode = (KeyCode)(i == 9 ? KeyCode.Alpha0 : KeyCode.Alpha1 + i); // Convert i to key number (1-0)
             if (Input.GetKeyDown(keyCode))
             {
                 if (i < buttons.Length)
                 {
                     ButtonClicked(i);
-                }
-            }
-        }
-
-        if (Input.GetMouseButtonDown(0)) // 0 is for left mouse button
-        {
-            foreach (Button button in buttons)
-            {
-                if (button == UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<Button>())
-                {
-                    ButtonClicked(GetButtonIndex(button));
-                    break;
                 }
             }
         }
