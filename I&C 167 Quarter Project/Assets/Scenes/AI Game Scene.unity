@@ -2492,6 +2492,7 @@ GameObject:
   - component: {fileID: 1184475621}
   - component: {fileID: 1184475620}
   - component: {fileID: 1184475624}
+  - component: {fileID: 1184475625}
   m_Layer: 0
   m_Name: AI Archer
   m_TagString: Untagged
@@ -2654,6 +2655,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   AIarcherRb: {fileID: 1184475621}
+--- !u!114 &1184475625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184475619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e651aa44646c274e9034fd1bd7dd748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 20
 --- !u!1 &1200500292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3800,6 +3815,7 @@ GameObject:
   - component: {fileID: 1936373108}
   - component: {fileID: 1936373107}
   - component: {fileID: 1936373111}
+  - component: {fileID: 1936373112}
   m_Layer: 0
   m_Name: AI Mage
   m_TagString: Untagged
@@ -3962,6 +3978,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   AImageRb: {fileID: 1936373108}
+--- !u!114 &1936373112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936373105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e651aa44646c274e9034fd1bd7dd748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 10
 --- !u!1001 &1942174805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4401,11 +4431,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2459670667992120698, guid: c4a9e7a2e66d9284c8a422a8194a677f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.2
+      value: -8.76
       objectReference: {fileID: 0}
     - target: {fileID: 2459670667992120698, guid: c4a9e7a2e66d9284c8a422a8194a677f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.11
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2459670667992120698, guid: c4a9e7a2e66d9284c8a422a8194a677f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4462,11 +4492,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.2
+      value: 8.56
       objectReference: {fileID: 0}
     - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.11
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5070607127938213862, guid: 4d4387046e0280a44b62caddd6c927cf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4605,7 +4635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2300405810683515588, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.68
+      value: 8.97
       objectReference: {fileID: 0}
     - target: {fileID: 2300405810683515588, guid: 338c4712f7818284aaecc41ab876a4cc, type: 3}
       propertyPath: m_LocalPosition.y
