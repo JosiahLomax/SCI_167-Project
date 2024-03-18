@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AIenemyHealth : MonoBehaviour // made by jacklyn
 {
+    // script being used for all AIenemies
+
     [SerializeField]
     public int health;
 
