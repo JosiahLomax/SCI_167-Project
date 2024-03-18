@@ -15,6 +15,8 @@ public class Player2Control : MonoBehaviour
     private GameObject archerToSpawn;                                             // Player 2 Archer Gameobject
     [SerializeField]
     private GameObject goblinToSpawn;                                             // Player 2 Goblin Gameobject
+    [SerializeField]
+    private GameObject mageToSpawn;                                              // Player 2 Mage Gameobject
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +40,11 @@ public class Player2Control : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Alpha8))
         {
             Instantiate(goblinToSpawn, troopSpawnPoint.transform.position, goblinToSpawn.transform.rotation);   // Pressing 8 on the Keyboard will Spawn Goblin!
+        }
+
+        if(Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            Instantiate(mageToSpawn, troopSpawnPoint.transform.position, mageToSpawn.transform.rotation);       // Pressing 7 on the Keyboard will Spawn Mage!
         }
     }
 }

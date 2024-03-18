@@ -12,6 +12,8 @@ public class Player1Control : MonoBehaviour
     private GameObject ArcherToSpawn;                             // Archer Gameobject
     [SerializeField]
     private GameObject GoblinToSpawn;                            // Goblin Gameobject
+    [SerializeField]
+    private GameObject MageToSpawn;                             // Mage Gameobject
 
 
 
@@ -32,5 +34,11 @@ public class Player1Control : MonoBehaviour
         {
             Instantiate(GoblinToSpawn, troopSpawnPoint.transform.position, GoblinToSpawn.transform.rotation);         // Pressing 3 on Keyboard Spawns in Goblin
         }
+
+        if(Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Instantiate(MageToSpawn, troopSpawnPoint.transform.position, MageToSpawn.transform.rotation);             // Pressing 4 on Keyboard Spawns in Mage
+        }
+        
     }
 }
