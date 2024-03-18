@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5070607127938213862}
-  - component: {fileID: 7036899941529951708}
   - component: {fileID: 3499430872076789336}
   m_Layer: 0
   m_Name: TroopSpawnPointP2
@@ -33,19 +32,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7036899941529951708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734665149638122}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25270abf4f948494c8626646141c5b3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troopToSpawn: {fileID: 1871661248081759676, guid: ca52ab1ac6caf5e42bd5ddf69d74fb19, type: 3}
 --- !u!114 &3499430872076789336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,3 +49,4 @@ MonoBehaviour:
   archerToSpawn: {fileID: 7985154209454102416, guid: f7c456b4828e85944a047cacad2e8bb3, type: 3}
   goblinToSpawn: {fileID: 2112628285794484786, guid: afeac047a537cd947a6faf15a3ea7cf9, type: 3}
   mageToSpawn: {fileID: 1176240031320346700, guid: 3d37e5bc6e1a4054cb6a56ce9e5f5f6c, type: 3}
+  shielderToSpawn: {fileID: 2434156330937386122, guid: e322b2d78fd959f40b2097a4be9ebdea, type: 3}
