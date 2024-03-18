@@ -10,6 +10,8 @@ public class Player1Control : MonoBehaviour
     private GameObject KnightToSpawn;                              // Knight Gameobject
     [SerializeField]
     private GameObject ArcherToSpawn;                             // Archer Gameobject
+    [SerializeField]
+    private GameObject GoblinToSpawn;                            // Goblin Gameobject
 
 
 
@@ -24,6 +26,11 @@ public class Player1Control : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Instantiate(ArcherToSpawn, troopSpawnPoint.transform.position, ArcherToSpawn.transform.rotation);          // Pressing 2 on the Keyoard Spawns in Archer 
+        }
+
+        if(Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Instantiate(GoblinToSpawn, troopSpawnPoint.transform.position, GoblinToSpawn.transform.rotation);         // Pressing 3 on Keyboard Spawns in Goblin
         }
     }
 }
