@@ -8,7 +8,7 @@ public class AIenemyHealth : MonoBehaviour // made by jacklyn
     public int health;
 
     [SerializeField]
-    public int maxHealth = 25;
+    public int maxHealth;
 
 
     void Start()
