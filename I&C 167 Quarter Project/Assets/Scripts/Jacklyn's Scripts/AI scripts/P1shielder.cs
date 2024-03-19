@@ -18,6 +18,6 @@ public class P1shielder : MonoBehaviour //made by jacklyn
     // Update is called once per frame
     void FixedUpdate()
     {
-        P1shielderRb.velocity = Vector2.left * speed;
+        P1shielderRb.velocity = Vector2.right * speed;
     }
 }

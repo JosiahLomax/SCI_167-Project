@@ -45,6 +45,14 @@ public class AIarrow : MonoBehaviour
 
         }
 
+        if (collision.gameObject.GetComponent<TowerHealthP1>())
+        {
+            collision.gameObject.GetComponent<TowerHealthP1>().health -= damage;
+
+        }
+
+
+
     }
 
 }

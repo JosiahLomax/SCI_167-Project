@@ -45,5 +45,11 @@ public class AIball : MonoBehaviour //made by jacklyn
 
         }
 
+        if (collision.gameObject.GetComponent<TowerHealthP1>())
+        {
+            collision.gameObject.GetComponent<TowerHealthP1>().health -= damage;
+
+        }
+
     }
 }
