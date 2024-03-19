@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4674502910105599100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2459670667992120698}
+  - component: {fileID: 3587627592492794358}
+  m_Layer: 0
+  m_Name: TroopSpawnPointP1
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2459670667992120698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674502910105599100}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: 2.11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3587627592492794358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674502910105599100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eebd4169ad287242b384f19ed7612ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  troopSpawnPoint: {fileID: 4674502910105599100}
+  KnightToSpawn: {fileID: 7223515366915071718, guid: 7cccfd00f1202db43b8cc6ae54ec637f, type: 3}
+  ArcherToSpawn: {fileID: 7855352803409113488, guid: 5052808ab678c9c448ca1fa4ebf10e47, type: 3}
+  GoblinToSpawn: {fileID: 1151208729978405911, guid: 72ca5eedd27c2ef44add3d1a8d899f92, type: 3}
+  MageToSpawn: {fileID: 1077755514842735552, guid: 60cf576f5f1a93f4db47f52d0a7972c5, type: 3}
+  ShielderToSpawn: {fileID: 199720911756271596, guid: 8161e53b9ab052440b8ae15e1b6bb6ec, type: 3}

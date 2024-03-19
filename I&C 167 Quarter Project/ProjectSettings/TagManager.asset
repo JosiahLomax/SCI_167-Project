@@ -5,19 +5,21 @@ TagManager:
   serializedVersion: 2
   tags:
   - Troop
+  - Troop P1
+  - Troop P2
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Action
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player 1 Enemy
+  - enemyPlayer1Layer
+  - enemyTroopLayerP1
+  - enemyPlayer2Layer
+  - enemyTroopLayerP2
+  - Player2'sEnemyLayer
   - 
   - 
   - 
