@@ -319,7 +319,7 @@ RectTransform:
   - {fileID: 503182363}
   - {fileID: 1449064059}
   - {fileID: 2024554954}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 783422551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1745,12 +1745,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451659858}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61128.54, y: -40203.293, z: -7936.289}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 60195.184, y: -40822.25, z: -7944.7275}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 783422551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &503182362
 GameObject:
@@ -2868,6 +2868,40 @@ Transform:
   - {fileID: 358006883}
   - {fileID: 927251220}
   - {fileID: 883594375}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &783422550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 783422551}
+  m_Layer: 0
+  m_Name: FULLBUTTONS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &783422551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783422550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 933.3566, y: 618.9582, z: 8.43825}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 137763740}
+  - {fileID: 2119918855}
+  - {fileID: 451659860}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &801204311
@@ -7601,7 +7635,7 @@ RectTransform:
   - {fileID: 572084861}
   - {fileID: 1585821398}
   - {fileID: 358854623}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 783422551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7619,8 +7653,6 @@ SceneRoots:
   - {fileID: 1939349881}
   - {fileID: 1470133452}
   - {fileID: 295472442}
-  - {fileID: 137763740}
   - {fileID: 618638760}
-  - {fileID: 451659860}
-  - {fileID: 2119918855}
   - {fileID: 758052892}
+  - {fileID: 783422551}

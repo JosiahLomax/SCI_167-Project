@@ -18,7 +18,7 @@ public class AIshielder : MonoBehaviour //made by jacklyn
     // Update is called once per frame
     void FixedUpdate()
     {
-        AIshielderRb.velocity = Vector2.right * speed;
+        AIshielderRb.velocity = Vector2.left * speed;
     }
 }
 
