@@ -31,27 +31,27 @@ public class Player2Control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha0))
+        if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             Instantiate(knightToSpawn, troopSpawnPoint.transform.position, knightToSpawn.transform.rotation);       // Pressing 0 on the Keyboard will Spawn Knight!
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha9))
+        if(Input.GetKeyDown(KeyCode.Alpha8))
         {
             Instantiate(archerToSpawn, troopSpawnPoint.transform.position, archerToSpawn.transform.rotation);     // Pressing 9 on the Keyboad will Spawn Archer!
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha8))
+        if(Input.GetKeyDown(KeyCode.Alpha9))
         {
             Instantiate(goblinToSpawn, troopSpawnPoint.transform.position, goblinToSpawn.transform.rotation);   // Pressing 8 on the Keyboard will Spawn Goblin!
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha7))
+        if(Input.GetKeyDown(KeyCode.Alpha0))
         {
             Instantiate(mageToSpawn, troopSpawnPoint.transform.position, mageToSpawn.transform.rotation);       // Pressing 7 on the Keyboard will Spawn Mage!
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha6))
+        if(Input.GetKeyDown(KeyCode.Alpha7))
         {
             Instantiate(shielderToSpawn, troopSpawnPoint.transform.position, shielderToSpawn.transform.rotation);       // Pressing 6 on the Keyboard will Spawn Shielder!
         }
