@@ -19,34 +19,34 @@ public class ElixirSystem : MonoBehaviour
     void Update()
     {
         ElixirDisplay.text = elixir.ToString();
-        if (Input.GetKeyDown(KeyCode.Alpha1) && !isSpawning && elixir > 0) // In the case they select and press 1.
+        if (Input.GetKeyDown(KeyCode.Alpha1) && !isSpawning && elixir > 1) // In the case they select and press 1.
         {
             isSpawning = true;
-            elixir--;
+            elixir = elixir - 2;
             isSpawning = false;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2) && !isSpawning && elixir > 0) // In the case they select and press 2.
         {
             isSpawning = true;
-            elixir--;
+            elixir = elixir - 1;
             isSpawning = false;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3) && !isSpawning && elixir > 0) // In the case they select and press 3.
         {
             isSpawning = true;
-            elixir--;
+            elixir = elixir - 1;
             isSpawning = false;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4) && !isSpawning && elixir > 0) // In the case they select and press 4.
         {
             isSpawning = true;
-            elixir--;
+            elixir = elixir - 3;
             isSpawning = false;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5) && !isSpawning && elixir > 0) // In the case they select and press 5.
         {
             isSpawning = true;
-            elixir--;
+            elixir = elixir - 1;
             isSpawning = false;
         }
 

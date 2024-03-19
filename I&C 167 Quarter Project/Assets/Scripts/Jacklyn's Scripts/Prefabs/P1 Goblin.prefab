@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3468e800fa5ef472bac7a9aead17bed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 1.4
   P1goblinRb: {fileID: 4020429606733856811}
 --- !u!114 &4481100806180483150
 MonoBehaviour:

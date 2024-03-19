@@ -34,7 +34,13 @@ public class AIknightAttack : MonoBehaviour // made by jacklyn
             collision.gameObject.GetComponent<TowerHealthP1>().health -= damage;
             
         }
-        
+
+        if (collision.gameObject.GetComponent<P1enemyHealth>())
+        {
+            collision.gameObject.GetComponent<P1enemyHealth>().health -= damage;
+
+        }
+
     }
 
 

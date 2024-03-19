@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80354c7b101489242973d2f0d2594ac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 1.3
   P1archerRb: {fileID: 8871365837352807148}
 --- !u!114 &3699281457030162690
 MonoBehaviour:

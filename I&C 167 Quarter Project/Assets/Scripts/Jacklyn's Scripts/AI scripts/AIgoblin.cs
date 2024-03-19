@@ -18,6 +18,6 @@ public class AIgoblin : MonoBehaviour //made by jacklyn
     // Update is called once per frame
     void FixedUpdate()
     {
-        AIgoblinRb.velocity = Vector2.right * speed;
+        AIgoblinRb.velocity = Vector2.left * speed;
     }
 }

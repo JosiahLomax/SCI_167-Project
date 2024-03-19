@@ -33,5 +33,11 @@ public class P1attacking : MonoBehaviour
 
         }
 
+        if (collision.gameObject.GetComponent<AIenemyHealth>())
+        {
+            collision.gameObject.GetComponent<AIenemyHealth>().health -= damage;
+
+        }
+
     }
 }

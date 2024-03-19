@@ -4,10 +4,25 @@ using UnityEngine;
 
 public class AISpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField]
+    private GameObject AImagePrefab;
+
+    [SerializeField]
+    private GameObject AIKnightPrefab;
+
+    [SerializeField]
+    private GameObject AIShielderPrefab;
+
+    
+
+
+    
     void Start()
     {
-        
+        Instantiate(AImagePrefab, transform.position, Quaternion.identity);
+        Instantiate(AIKnightPrefab, transform.position, Quaternion.identity);
+        Instantiate(AIKnightPrefab, transform.position, Quaternion.identity);
+        Instantiate(AIShielderPrefab, transform.position, Quaternion.identity);
     }
 
     // Update is called once per frame

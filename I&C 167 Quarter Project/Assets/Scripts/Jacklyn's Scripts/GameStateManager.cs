@@ -44,14 +44,14 @@ public class GameStateManager : MonoBehaviour
     public static void NewGameCom()
     {
         state = GAMESTATE.PLAYING;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
         Time.timeScale = 1f;
     }
 
     public static void NewGameP2()
     {
         state = GAMESTATE.PLAYING;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
         Time.timeScale = 1f;
     }
 
@@ -72,23 +72,11 @@ public class GameStateManager : MonoBehaviour
     public static void GameOver()
     {
         state = GAMESTATE.GAMEOVER;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(4);
     }
 
 
-    //public static void TogglePause()
-    //{
-    //    if (state == GAMESTATE.PLAYING)
-    //    {
-    //        state = GAMESTATE.PAUSED;
-    //        Time.timeScale = 0;
-    //    }
-    //    else if (state == GAMESTATE.PAUSED)
-    //    {
-    //        state = GAMESTATE.PLAYING;
-    //        Time.timeScale = 1;
-    //    }
-    //}
+   
 
 
     public static void ResetScene()
