@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   troopSpawnPoint: {fileID: 1734665149638122}
-  knightToSpawn: {fileID: 1871661248081759676, guid: ca52ab1ac6caf5e42bd5ddf69d74fb19, type: 3}
-  archerToSpawn: {fileID: 7985154209454102416, guid: f7c456b4828e85944a047cacad2e8bb3, type: 3}
-  goblinToSpawn: {fileID: 2112628285794484786, guid: afeac047a537cd947a6faf15a3ea7cf9, type: 3}
-  mageToSpawn: {fileID: 1176240031320346700, guid: 3d37e5bc6e1a4054cb6a56ce9e5f5f6c, type: 3}
-  shielderToSpawn: {fileID: 2434156330937386122, guid: e322b2d78fd959f40b2097a4be9ebdea, type: 3}
+  knightToSpawn: {fileID: 5580572433092964135, guid: 9ee16414cc41079449805b75da4420b2, type: 3}
+  archerToSpawn: {fileID: 4401827510214251040, guid: 704adec52da17cc45a41da7a3bdbaccf, type: 3}
+  goblinToSpawn: {fileID: 6826661323717962277, guid: 450dd24fd615a954fb6b3587e80c9eef, type: 3}
+  mageToSpawn: {fileID: 4230678888450349738, guid: 855b8db8e0a014142a82c8427f0fd2fc, type: 3}
+  shielderToSpawn: {fileID: 6283383621216768543, guid: 02df39d35ab19c9458a5bc1ad320a81c, type: 3}
