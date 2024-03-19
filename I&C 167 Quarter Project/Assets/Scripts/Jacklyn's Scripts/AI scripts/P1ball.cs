@@ -45,5 +45,11 @@ public class P1ball : MonoBehaviour //made by jacklyn
 
         }
 
+        if (collision.gameObject.GetComponent<TowerHealthAI>())
+        {
+            collision.gameObject.GetComponent<TowerHealthAI>().health -= damage;
+
+        }
+
     }
 }
