@@ -38,7 +38,7 @@ public class P1stateMachine : MonoBehaviour
     {
         if (knightState == KnightState.Walking)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, detectionRange, enemyLayer);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, detectionRange, enemyLayer);
             if (hit.collider != null) //if raycast finds enemy layer (not null/empty), change states
             {
                 knightState = KnightState.Attacking;
@@ -47,7 +47,7 @@ public class P1stateMachine : MonoBehaviour
 
         if (archerState == ArcherState.Walking)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, detectionRange, enemyLayer);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, detectionRange, enemyLayer);
             if (hit.collider != null) //if raycast finds enemy layer (not null/empty), change states
             {
                 archerState = ArcherState.Shooting;
@@ -56,7 +56,7 @@ public class P1stateMachine : MonoBehaviour
 
         if (shielderState == ShielderState.Walking)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, detectionRange, enemyLayer);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, detectionRange, enemyLayer);
             if (hit.collider != null) //if raycast finds enemy layer (not null/empty), change states
             {
                 shielderState = ShielderState.Attacking;
@@ -65,7 +65,7 @@ public class P1stateMachine : MonoBehaviour
 
         if (mageState == MageState.Walking)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, detectionRange, enemyLayer);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, detectionRange, enemyLayer);
             if (hit.collider != null) //if raycast finds enemy layer (not null/empty), change states
             {
                 mageState = MageState.Shooting;
@@ -74,7 +74,7 @@ public class P1stateMachine : MonoBehaviour
 
         if (goblinState == GoblinState.Walking)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, detectionRange, enemyLayer);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, detectionRange, enemyLayer);
             if (hit.collider != null) //if raycast finds enemy layer (not null/empty), change states
             {
                 goblinState = GoblinState.Attacking;
